@@ -1,0 +1,846 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@500;700&display=swap');
+
+/* ======================= */
+/* GENERAL STYLES */
+/* ======================= */
+
+/* General Reset */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Body */
+body {
+    background: #ebe3e1; /* Soft Beige */
+    color: #000000; /* Black */
+}
+
+/* ======================= */
+/* HEADER & NAVIGATION */
+/* ======================= */
+
+header {
+    background: linear-gradient(135deg, #064965, #008081); /* Deep Blue to Teal */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+.logo {
+    height: 60px; /* Adjust as needed */
+    width: 60px; /* Ensure it's a perfect circle */
+    object-fit: cover; /* Prevents distortion */
+    border-radius: 50%; /* Makes it circular */
+}
+
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: #d8972f; /* Gold */
+    color: #000000;
+}
+
+/* ======================= */
+/* HERO SECTION */
+/* ======================= */
+
+.hero {
+    background: linear-gradient(135deg, #064965, #008081);
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: #ebe3e1;
+}
+
+/* Hero Title */
+.hero h1 {
+    font-size: 3.8rem;
+    font-weight: 700;
+    color: #ebe3e1;
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 15px;
+}
+
+/* Hero Subtitle */
+.hero p {
+    font-size: 1.5rem;
+    max-width: 700px;
+    line-height: 1.7;
+    color: #a6b8bc;
+}
+
+/* Call to Action Button */
+.hero .btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: #d8972f;
+    color: #000000;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.hero .btn:hover {
+    background: #a6b8bc;
+    color: #064965;
+    transform: scale(1.05);
+}
+
+/* ======================= */
+/* SERVICES SECTION */
+/* ======================= */
+
+.services {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #ebe3e1, #c4d3d6);
+}
+
+.services h1 {
+    font-size: 2.8rem;
+    color: #064965;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+}
+
+.services p {
+    font-size: 18px;
+    color: #333;
+    max-width: 700px;
+    margin: 0 auto 50px;
+    line-height: 1.6;
+}
+
+/* Service Grid */
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Individual Service Box */
+.service {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+    position: relative;
+    text-align: center;
+}
+
+/* Service Image */
+.service img {
+    width: 100%;
+    height: 200px; /* Ensure uniform sizing */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 8px;
+}
+
+/* Service Text */
+.service h3 {
+    margin: 20px 0 10px;
+    font-size: 22px;
+    color: #064965;
+    font-weight: bold;
+}
+
+.service p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Hover Effects */
+.service:hover {
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+    transform: scale(1.05);
+}
+
+/* Center the View Services Button */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* CTA Button */
+.services .btn {
+    background: #008081;
+    color: white;
+    padding: 16px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.services .btn:hover {
+    background: #d8972f;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/* ======================= */
+/* CUSTOMER REVIEWS SECTION */
+/* ======================= */
+
+.review-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.review {
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.review-text {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.review-author {
+    font-weight: bold;
+    color: #064965;
+    margin-top: 10px;
+}
+
+/* Review Buttons */
+.review-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.review-buttons button {
+    background: #d8972f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    margin: 0 10px;
+}
+
+.review-buttons button:hover {
+    background: #a6b8bc;
+}
+
+
+
+/* ======================= */
+/* CONTACT US SECTION */
+/* ======================= */
+
+.contact-container {
+    text-align: center;
+    padding: 50px 20px;
+    background: #ebe3e1;
+}
+
+.contact-card {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.contact-item img {
+    width: 35px;
+    height: 35px;
+}
+
+.contact-item p {
+    font-size: 18px;
+    color: #064965;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-item a:hover {
+    color: #d8972f;
+}
+
+/* Social Media Section */
+.social-media {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.social-media h3 {
+    font-size: 24px;
+    color: #064965; /* Deep Blue */
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img {
+    width: 45px;
+    height: 45px;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+/* Map Styling */
+.map-container {
+    margin-top: 20px;
+}
+
+.map-box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.map-box iframe {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+}
+
+/* Get Directions Button */
+.map-box .map-link {
+    display: inline-block;
+    margin-top: 15px;
+    background: #064965; /* Deep Blue */
+    color: #ebe3e1; /* Soft Beige */
+    padding: 12px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.map-box .map-link:hover {
+    background: #d8972f; /* Gold */
+    color: #000000;
+    transform: scale(1.05);
+}
+
+/* Hero Section - Contact Page */
+.hero {
+    background: linear-gradient(135deg, #064965, #008081);
+    height: 50vh; /* Reduce height slightly */
+    display: flex;
+    flex-direction: column; /* Stack elements */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px; /* Adjust padding */
+    color: #ebe3e1;
+}
+
+.hero h1 {
+    font-size: 3rem; /* Increase size */
+    font-weight: 700;
+    margin-bottom: 10px; /* Add spacing */
+}
+
+.hero p {
+    font-size: 1.4rem;
+    max-width: 700px;
+    line-height: 1.6;
+    color: #a6b8bc;
+    font-weight: 400;
+}
+
+/* ======================= */
+/* FOOTER */
+/* ======================= */
+
+footer {
+    background: #064965;
+    color: #ebe3e1;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+}
+
+/* ======================= */
+/* WHATSAPP FLOATING BUTTON */
+/* ======================= */
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 65px;
+    height: 65px;
+}
+
+.whatsapp-btn img {
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-btn img:hover {
+    transform: scale(1.1);
+}
+
+/* ======================= */
+/* Review */
+/* ======================= */
+
+
+/* Reviews Section */
+.reviews {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f9f9f9;
+}
+
+.review-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.review {
+    display: none;
+    background: #ebe3e1; /* Soft Beige */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #000000;
+}
+
+.review.active {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.review-text {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.review-author {
+    font-weight: bold;
+    color: #064965;
+}
+
+/* Arrows for Review Carousel */
+.review-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.review-buttons button {
+    background: #d8972f;
+    color: #000000;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease-in-out;
+}
+
+.review-buttons button:hover {
+    background: #064965;
+    color: #ebe3e1;
+}
+
+/* ======================= */
+/* Destinations */
+/* ======================= */
+
+/* Destinations Section */
+.destinations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/* Individual Package */
+.package {
+    background: #ffffff; /* White background for contrast */
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Ensure all trips show by default */
+.package {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Hover effect */
+.package:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Styling */
+.package img {
+    width: 100%;
+    height: 220px;
+    border-radius: 12px;
+    object-fit: cover;
+    transition: transform 0.4s ease-in-out;
+}
+
+/* Zoom effect on hover */
+.package:hover img {
+    transform: scale(1.05);
+}
+
+/* Destination Title */
+.package h3 {
+    font-size: 22px;
+    color: #064965; /* Deep Blue */
+    margin: 15px 0 10px;
+}
+
+/* Destination Description */
+.package p {
+    font-size: 16px;
+    color: #000000; /* Black */
+    line-height: 1.5;
+}
+
+/* WhatsApp Pop-up */
+.popup {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.85);
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    width: 85%;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Show pop-up on hover */
+.package:hover .popup {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-10px);
+}
+
+/* WhatsApp link */
+.popup a {
+    color: #25D366;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.popup a:hover {
+    text-decoration: underline;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.filter-buttons button {
+    background: #064965; /* Deep Blue */
+    color: #ebe3e1; /* Soft Beige */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.filter-buttons button:hover,
+.filter-buttons button.active {
+    background: #d8972f; /* Gold */
+    color: #000000;
+    transform: scale(1.05);
+}
+
+/* ======================= */
+/* ANIMATIONS */
+/* ======================= */
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ======================= */
+/* ABOUT PAGE STYLING */
+/* ======================= */
+
+/* Hero Section */
+.about-hero {
+    background: linear-gradient(135deg, #064965, #008081);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+    color: #ebe3e1;
+}
+
+.about-hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.about-hero p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #a6b8bc;
+}
+
+/* About Content */
+.about-content {
+    padding: 80px 20px;
+    background: #ebe3e1; /* Soft Beige */
+}
+
+.about-content .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    color: #064965;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+/* About Grid */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+    justify-content: center;
+}
+
+.about-item {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.about-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.about-item p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #064965;
+}
+
+.about-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.why-choose-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: left;
+    font-size: 1.2rem;
+    color: #064965;
+}
+
+.why-choose-list li {
+    background: white;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.why-choose-list li:hover {
+    transform: translateX(5px);
+}
+
+/* ======================= */
+/* CUSTOMER GALLERY CAROUSEL */
+/* ======================= */
+
+.gallery {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f9f9f9;
+}
+
+.gallery h3 {
+    font-size: 28px;
+    color: #064965;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Carousel */
+.carousel {
+    position: relative;
+    max-width: 600px; /* Adjust the max width */
+    margin: auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    max-height: 400px; /* Limits height */
+    object-fit: cover; /* Ensures images stay proportional */
+    border-radius: 12px;
+    display: none;
+}
+
+.carousel img.active {
+    display: block;
+}
+
+/* Navigation Arrows */
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+    transition: background 0.3s ease-in-out;
+}
+
+.carousel button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
