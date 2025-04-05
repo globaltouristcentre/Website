@@ -23,6 +23,86 @@ body {
     color: #000000; /* Black */
 }
 
+/* Media Queries */
+@media (max-width: 1024px) {
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    nav ul {
+      justify-content: center;
+    }
+  
+    .review-carousel {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .destination img {
+      height: 180px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    header .container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .hero {
+      padding: 4rem 1.5rem;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .destination img {
+      height: 160px;
+    }
+  
+    .review-carousel img {
+      height: 200px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero h1 {
+      font-size: 1.7rem;
+    }
+  
+    .hero p {
+      font-size: 0.95rem;
+    }
+  
+    .container {
+      width: 95%;
+    }
+  
+    .destination img {
+      height: 140px;
+    }
+  
+    .review-carousel img {
+      height: 180px;
+    }
+  
+    .whatsapp-btn {
+      padding: 0.8rem;
+      font-size: 1.3rem;
+    }
+  }
+
 /* ======================= */
 /* HEADER & NAVIGATION */
 /* ======================= */
