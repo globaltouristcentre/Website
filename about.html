@@ -3,21 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Global Tourist Centre</title>
+    <title>Global Tourist Centre</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
-
-    <!-- Google Translate API -->
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'en',
-                includedLanguages: 'en,ru,it,fr,de',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-            }, 'google_translate_element');
-        }
-    </script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 <body>
 
@@ -26,19 +15,37 @@
         <a href="index.html">
             <img src="assets/logo.png" alt="Global Tourist Centre Logo" class="logo">
         </a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="destinations.html">Destinations</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
         
-        <!-- Google Translate Dropdown -->
         <div id="google_translate_element"></div>
-    </header>
+            
+        <div class="nav-container">
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>    
 
     <!-- Hero Section -->
     <section class="hero about-hero">
@@ -68,10 +75,10 @@
         <h3>Memorable Trips with Our Customers</h3>
         <div class="carousel">
             <div class="carousel-inner">
-                <img src="assets/trip1.jpg" class="active" alt="Trip 1">
-                <img src="assets/trip2.jpg" alt="Trip 2">
-                <img src="assets/trip3.jpg" alt="Trip 3">
-                <img src="assets/trip4.jpg" alt="Trip 4">
+                <img src="assets/Gallery/trip1.jpg" class="active" alt="Trip 1">
+                <img src="assets/Gallery/trip2.jpg" alt="Trip 2">
+                <img src="assets/Gallery/trip3.jpg" alt="Trip 3">
+                <img src="assets/Gallery/trip4.jpg" alt="Trip 4">
 
             </div>
             <button class="prev" onclick="prevSlide()">&#10094;</button>
