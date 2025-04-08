@@ -992,3 +992,228 @@ footer {
       font-size: 14px;
   }
 }
+
+/* ======================= */
+/* DESKTOP-SPECIFIC STYLES */
+/* ======================= */
+
+@media (min-width: 769px) {
+    /* General Container Sizes */
+    .container,
+    .service-container,
+    .review-container,
+    .contact-container,
+    .about-content .container,
+    .form-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    /* Hero Section */
+    .hero {
+      min-height: 90vh;
+      padding: 80px 20px;
+    }
+  
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 25px;
+    }
+  
+    .hero p {
+      font-size: 1.5rem;
+      max-width: 800px;
+    }
+  
+    /* Services Grid */
+    .service-container {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      padding: 0 30px;
+    }
+  
+    .service {
+      padding: 30px;
+    }
+  
+    /* Destinations Grid */
+    .destinations {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      padding: 0 30px;
+    }
+  
+    /* About Section */
+    .about-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+  
+    /* Contact Section */
+    .contact-card {
+      max-width: 800px;
+      padding: 40px;
+    }
+  
+    /* Form Section */
+    .form-container {
+      padding: 50px;
+    }
+  
+    /* Gallery Carousel */
+    .carousel img {
+      max-height: 500px;
+    }
+  
+    /* Review Section */
+    .review {
+      padding: 40px;
+      font-size: 1.1rem;
+    }
+  
+    /* Header/Navigation */
+    nav.desktop-nav ul {
+      gap: 25px;
+    }
+  
+    nav.desktop-nav li a {
+      font-size: 1.1rem;
+      padding: 10px 15px;
+    }
+  
+    /* Font Sizes */
+    h1 {
+      font-size: 3rem;
+    }
+  
+    h2 {
+      font-size: 2.5rem;
+    }
+  
+    h3 {
+      font-size: 1.8rem;
+    }
+  
+    p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+  
+    /* Buttons */
+    .btn {
+      font-size: 1.1rem;
+      padding: 15px 30px;
+    }
+  }
+  
+  /* Large Desktop Screens (1200px+) */
+  @media (min-width: 1200px) {
+    .hero h1 {
+      font-size: 4rem;
+    }
+  
+    .service-container,
+    .destinations,
+    .about-grid {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+  }
+
+/* ======================= */
+/* LEAD FORM SECTION */
+/* ======================= */
+
+.lead-form {
+    background: linear-gradient(135deg, #064965, #008081);
+    padding: 60px 20px;
+    color: #ebe3e1;
+    width: 100%;
+    text-align: center;
+}
+
+.lead-form h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ebe3e1;
+}
+
+.lead-form p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #a6b8bc;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ebe3e1;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #a6b8bc;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #d8972f;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.form-group select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23a6b8bc'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 20px;
+}
+
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.lead-form .btn {
+    background: #d8972f;
+    color: #000000;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.lead-form .btn:hover {
+    background: #ebe3e1;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
