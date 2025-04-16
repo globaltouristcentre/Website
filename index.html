@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Tourist Centre</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <a href="index.html">
+            <img src="assets/logo.png" alt="Global Tourist Centre Logo" class="logo">
+        </a>
+        
+        <div id="google_translate_element"></div>
+            
+        <div class="nav-container">
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay">
+            <h1>Explore the World with Us</h1>
+            <p>Embark on unforgettable journeys with expertly crafted travel experiences.</p>
+            <a href="destinations.html" class="btn">View Packages</a>
+        </div>
+    </section>
+
+     <!-- Itinerary Form Section -->
+     <section class="section itinerary-form-section">
+        <div class="container">
+            <div class="itinerary-form-container">
+                <div class="form-header" data-aos="fade-up">
+                    <h2>Get Your Free Personalized Itinerary</h2>
+                    <p>Tell us about your travel plans and we'll create a customized itinerary just for you</p>
+                </div>
+                <form id="itineraryForm" class="itinerary-form" data-aos="fade-up" data-aos-delay="100">
+                    <div class="form-group">
+                        <input type="text" id="itineraryName" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="itineraryPhone" name="phone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="itineraryEmail" name="email" placeholder="Email Address">
+                    </div>
+                    <div class="form-group">
+                        <select id="itineraryPackage" name="package" required>
+                            <option value="" disabled selected>Which Trip are you interested in?</option>
+                            <option value="Munnar & Alleppey">Munnar & Alleppey</option>
+                            <option value="Bhutan">Bhutan</option>
+                            <option value="Andaman Islands">Andaman Islands</option>
+                            <option value="Kodaikanal">Kodaikanal</option>
+                            <option value="Goa Beach Vacation">Goa Beach Vacation</option>
+                            <option value="Dubai Adventure">Dubai Adventure</option>
+                            <option value="Maldives Luxury">Maldives Luxury</option>
+                            <option value="European Tour">European Tour</option>
+                            <option value="Custom Package">Custom Package (Tell us your dream destination)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="itineraryDates" name="dates" placeholder="Preferred Travel Dates">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="itineraryDetails" name="details" placeholder="Any special requirements or preferences"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Get My Free Itinerary</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h1>Our Services</h1>
+        <div class="service-container">
+            <div class="service">
+                <img src="assets/service1.jpg" alt="Personalized Tours">
+                <h3>Personalized Tours</h3>
+                <p>Experience tailor-made itineraries that suit your preferences and schedule.</p>
+            </div>
+            <div class="service">
+                <img src="assets/service2.jpg" alt="Group Travel">
+                <h3>Group Travel</h3>
+                <p>Join group tours and meet like-minded travelers on exciting adventures.</p>
+            </div>
+            <div class="service">
+                <img src="assets/service3.jpg" alt="Corporate Packages">
+                <h3>Corporate Packages</h3>
+                <p>Organize seamless corporate trips with our specialized services.</p>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <a href="services.html" class="btn">Our Services</a>
+        </div>
+    
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+        <h1>Happy Customers</h1>
+        <div class="review-container">
+            <div class="review">
+                <p class="review-text">"I recently went on a trip with my husband to Kerala for 7 days. Global Tourist Centre have made our experience to Kerala a memorial one. Shifa is best at her work. She had organized our trip so well that we didn't faced any problem at any time and we enjoyed a lot. Experience with Global Tourist Centre was awesome. Thank you Global Tourist Centre for making our trip to Kerala a memorable one."</p>
+                <p class="review-author">- Soaleha Shaikh</p>
+            </div>
+            <div class="review">
+                <p class="review-text">"Thank you for the wonderful trip that you planned for us. It really was once in a lifetime experience."</p>
+                <p class="review-author">- Fatima Shaik</p>
+            </div>
+            <div class="review">
+                <p class="review-text">"I booked flights this year and last through the ever helpful, tolerant and friendly Shifa. Everything went according to plan and I was given full explanations and guidance. She seems to be able to handle several things simultaneously with total ease and sorts out extra wishes with a smile on her face. I’ve never really seen a talent like this before. Thanks so much Shifa. I just wish Google made things as simple as you do. It took a lot of nerves on my part to get round to writing this but it is the least you deserve!"</p>
+                <p class="review-author">- Jeff Cox</p>
+            </div>
+            <div class="review">
+                <p class="review-text">"The tour was amazing, very well organized. We are very happy and satisfied. Angela is very knowledgeable, professional and cares about customer's needs."</p>
+                <p class="review-author">- Rimma, Minnetonka, MN</p>
+            </div>
+            <div class="review">
+                <p class="review-text">"We recently went on a trip to Kodaikanal with a group of 10 friends, and Global Tourist Centre made the experience seamless and enjoyable. From booking our travel services to arranging a beautiful villa, everything was perfectly organized. Their attention to detail and professionalism ensured that our trip was stress-free and full of fun. Highly recommend their services for anyone planning a getaway. Thanks, Global Tourist Centre, for making our Kodaikanal trip unforgettable!"</p>
+                <p class="review-author">- Mohammed Zanveer</p>
+            </div>
+            <div class="review">
+                <p class="review-text">"My recent experience at Global Tourist Centre was exceptional. The service, especially from Shifa, is outstanding. They are always attentive and ready to assist with any inquiries. Moreover, the best exchange in Goa. I highly recommend Global Tourist Centre for their excellent service."</p>
+                <p class="review-author">- Julio Tobio</p>
+            </div>
+        </div>
+
+        <!-- Review Navigation Buttons -->
+        <div class="review-buttons">
+            <button id="prevReview">❮</button>
+            <button id="nextReview">❯</button>
+        </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919067972295" class="whatsapp-btn" target="_blank">
+        <img src="assets/whatsapp-icon.png" alt="WhatsApp">
+    </a>
+
+    <!-- Lead Form Section -->
+<section class="lead-form">
+    <div class="form-container">
+        <h2>Get a Free Quote</h2>
+        <p>Fill out this form and we'll contact you on WhatsApp with personalized offers</p>
+        
+        <form id="whatsappLeadForm">
+            <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" id="phone" name="phone" placeholder="WhatsApp Number" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Email Address">
+            </div>
+            <div class="form-group">
+                <select id="interest" name="interest">
+                    <option value="" disabled selected>What are you interested in?</option>
+                    <option value="Personalized Tours">Personalized Tours</option>
+                    <option value="Group Travel">Group Travel</option>
+                    <option value="Corporate Packages">Corporate Packages</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <textarea id="message" name="message" placeholder="Your travel plans or questions"></textarea>
+            </div>
+            <button type="submit" class="btn">Send via WhatsApp</button>
+        </form>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Global Tourist Centre. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
