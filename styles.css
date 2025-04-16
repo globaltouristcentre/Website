@@ -1253,12 +1253,12 @@ footer {
 
 .form-header h2 {
     font-size: 2rem;
-    color: #ebe3e1; /* Light Beige */
+    color: #ebe3e1;
     margin-bottom: 1rem;
 }
 
 .form-header p {
-    color: rgba(235, 227, 225, 0.9); /* Light Beige, semi-transparent */
+    color: rgba(235, 227, 225, 0.9);
     font-size: 1.1rem;
 }
 
@@ -1284,30 +1284,39 @@ footer {
     border-radius: var(--radius-md);
     border: 2px solid rgba(255, 255, 255, 0.2);
     background-color: rgba(255, 255, 255, 0.05);
-    color: #ebe3e1; /* Light text */
+    color: #ebe3e1;
     font-family: var(--font-primary);
     transition: var(--transition);
 }
 
 .itinerary-form input::placeholder,
 .itinerary-form textarea::placeholder {
-    color: rgba(235, 227, 225, 0.7); /* Soft Beige */
+    color: rgba(235, 227, 225, 0.7);
 }
 
 .itinerary-form input:focus,
 .itinerary-form select:focus,
 .itinerary-form textarea:focus {
     outline: none;
-    border-color: #008081; /* Teal Accent */
+    border-color: #008081;
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+/* === Dropdown Fix: Make text black on open === */
 .itinerary-form select {
     appearance: none;
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ebe3e1'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+    background-color: rgba(255, 255, 255, 0.9); /* Light background */
+    color: #000000; /* Black text */
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000000'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
     background-repeat: no-repeat;
     background-position: right 1rem center;
     background-size: 1rem;
+}
+
+.itinerary-form select option {
+    color: #000000; /* Black option text */
+    background-color: #ffffff;
 }
 
 .itinerary-form textarea {
@@ -1319,8 +1328,8 @@ footer {
     grid-column: span 2;
     width: 100%;
     margin-top: 1rem;
-    background-color: #d8972f; /* CTA Yellow */
-    color: #000000; /* Black text */
+    background-color: #d8972f;
+    color: #000000;
     border: none;
     padding: 1rem;
     font-weight: bold;
@@ -1330,7 +1339,7 @@ footer {
 }
 
 .itinerary-form button[type="submit"]:hover {
-    background-color: #008081; /* Teal */
+    background-color: #008081;
     color: #ffffff;
 }
 
