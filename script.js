@@ -150,3 +150,82 @@ function googleTranslateElementInit() {
         'google_translate_element'
     );
 }   
+
+document.addEventListener('DOMContentLoaded', function() {
+    // WhatsApp Lead Form Submission
+    const whatsappForm = document.getElementById('whatsappLeadForm');
+    
+    if (whatsappForm) {
+        whatsappForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            const interest = document.getElementById('interest').value;
+            const message = document.getElementById('message').value;
+            
+            // Format the WhatsApp message
+            let whatsappMessage = `Hello Global Tourist Centre!%0A%0A`;
+            whatsappMessage += `*Name:* ${name}%0A`;
+            whatsappMessage += `*Phone:* ${phone}%0A`;
+            if (email) whatsappMessage += `*Email:* ${email}%0A`;
+            if (interest) whatsappMessage += `*Interest:* ${interest}%0A`;
+            if (message) whatsappMessage += `*Message:* ${message}%0A`;
+            
+            // Your WhatsApp number (same as in your floating button)
+            const whatsappNumber = '919067972295';
+            
+            // Create the WhatsApp URL
+            const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+            
+            // Open the URL in a new tab
+            window.open(whatsappUrl, '_blank');
+            
+            // Optional: Reset the form
+            whatsappForm.reset();
+        });
+    }
+});
+
+// Itinerary Form Submission
+document.addEventListener('DOMContentLoaded', function() {
+
+    const itineraryForm = document.getElementById('itineraryForm');
+    if (itineraryForm) {
+        itineraryForm.addEventListener('submit', function(e) {
+            e.preventDefault(); // This prevents the page from reloading
+            
+            // Get form values
+            const name = document.getElementById('itineraryName').value;
+            const phone = document.getElementById('itineraryPhone').value;
+            const email = document.getElementById('itineraryEmail').value;
+            const package = document.getElementById('itineraryPackage').value;
+            const dates = document.getElementById('itineraryDates').value;
+            const details = document.getElementById('itineraryDetails').value;
+            
+            // Format the WhatsApp message
+            let whatsappMessage = `Hello Global Tourist Centre!%0A%0AI'm interested in a personalized itinerary.%0A%0A`;
+            whatsappMessage += `*Name:* ${name}%0A`;
+            whatsappMessage += `*Phone:* ${phone}%0A`;
+            if (email) whatsappMessage += `*Email:* ${email}%0A`;
+            whatsappMessage += `*Package Interested In:* ${package}%0A`;
+            if (dates) whatsappMessage += `*Preferred Travel Dates:* ${dates}%0A`;
+            if (details) whatsappMessage += `*Special Requirements:* ${details}%0A`;
+            
+            // Your WhatsApp number
+            const whatsappNumber = '919067972295';
+            
+            // Create the WhatsApp URL
+            const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${(whatsappMessage)}`;
+            
+            // Open WhatsApp with the pre-filled message
+            window.open(whatsappUrl, '_blank');
+            
+            // Optional: Reset the form
+            itineraryForm.reset();
+        
+        })
+    }
+});
