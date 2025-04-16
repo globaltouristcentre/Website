@@ -1217,3 +1217,133 @@ footer {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
+
+/* ======================= */
+/* ITINERARY FORM SECTION */
+/* ======================= */
+.itinerary-form-section {
+    background-color: #064965; /* Primary background */
+    color: #ebe3e1; /* Light text */
+    padding: 4rem 0;
+    position: relative;
+}
+
+.itinerary-form-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('assets/pattern.png') center/cover no-repeat;
+    opacity: 0.1;
+}
+
+.itinerary-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-header h2 {
+    font-size: 2rem;
+    color: #ebe3e1; /* Light Beige */
+    margin-bottom: 1rem;
+}
+
+.form-header p {
+    color: rgba(235, 227, 225, 0.9); /* Light Beige, semi-transparent */
+    font-size: 1.1rem;
+}
+
+.itinerary-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group:nth-last-child(-n+2) {
+    grid-column: span 2;
+}
+
+.itinerary-form input,
+.itinerary-form select,
+.itinerary-form textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: var(--radius-md);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #ebe3e1; /* Light text */
+    font-family: var(--font-primary);
+    transition: var(--transition);
+}
+
+.itinerary-form input::placeholder,
+.itinerary-form textarea::placeholder {
+    color: rgba(235, 227, 225, 0.7); /* Soft Beige */
+}
+
+.itinerary-form input:focus,
+.itinerary-form select:focus,
+.itinerary-form textarea:focus {
+    outline: none;
+    border-color: #008081; /* Teal Accent */
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.itinerary-form select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ebe3e1'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1rem;
+}
+
+.itinerary-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.itinerary-form button[type="submit"] {
+    grid-column: span 2;
+    width: 100%;
+    margin-top: 1rem;
+    background-color: #d8972f; /* CTA Yellow */
+    color: #000000; /* Black text */
+    border: none;
+    padding: 1rem;
+    font-weight: bold;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.itinerary-form button[type="submit"]:hover {
+    background-color: #008081; /* Teal */
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .itinerary-form {
+        grid-template-columns: 1fr;
+    }
+
+    .form-group:nth-last-child(-n+2) {
+        grid-column: span 1;
+    }
+
+    .itinerary-form button[type="submit"] {
+        grid-column: span 1;
+    }
+}
