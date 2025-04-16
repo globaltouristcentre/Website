@@ -1313,7 +1313,7 @@ footer {
 /* NEW: Dropdown option styling */
 .itinerary-form select option {
     background-color: #064965; /* Match form background */
-    color: #ebe3e1; /* Light text */
+    color: #00000; /* Light text */
     padding: 10px;
 }
 
