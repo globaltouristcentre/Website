@@ -1,8 +1,0 @@
-
-phone
-index hero image
-Index instagram pictures looking too small
-fix the up coming trips alignment 
-fix the sikkim sizing 
-fix the flight sizing 
-fix contact us page, sizing and form, make the form come underneath contact information
