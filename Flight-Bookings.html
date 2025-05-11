@@ -157,9 +157,6 @@
                             <div class="input-with-icon">
                                 <i class="fas fa-plane-departure"></i>
                                 <input type="text" id="fromCity" placeholder="City or Airport" class="city-input">
-                                <button class="swap-cities" title="Swap cities">
-                                    <i class="fas fa-exchange-alt"></i>
-                                </button>
                             </div>
                         </div>
                         
@@ -249,9 +246,6 @@
                             <div class="input-with-icon">
                                 <i class="fas fa-plane-departure"></i>
                                 <input type="text" id="onewayFromCity" placeholder="City or Airport" class="city-input">
-                                <button class="swap-cities" title="Swap cities">
-                                    <i class="fas fa-exchange-alt"></i>
-                                </button>
                             </div>
                         </div>
                         
@@ -836,7 +830,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // DOM Elements
     const searchTabs = document.querySelectorAll('.search-tab');
     const searchForms = document.querySelectorAll('.search-form');
-    const swapCitiesBtns = document.querySelectorAll('.swap-cities');
     const passengerSelectors = document.querySelectorAll('.passenger-selector');
     const addFlightBtn = document.getElementById('addFlightSegment');
     const multiCityContainer = document.querySelector('.multi-city-container');
@@ -891,24 +884,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Set up city swapping
-    function setupSwapCities() {
-        swapCitiesBtns.forEach(btn => {
-            btn.addEventListener('click', function(e) {
-                e.preventDefault();
-                const form = this.closest('.search-form');
-                const inputs = form.querySelectorAll('.city-input');
-                
-                if (inputs.length >= 2) {
-                    const fromInput = inputs[0];
-                    const toInput = inputs[1];
-                    const temp = fromInput.value;
-                    fromInput.value = toInput.value;
-                    toInput.value = temp;
-                }
-            });
-        });
-    }
 
     // Set up passenger selectors
     function setupPassengerSelectors() {
