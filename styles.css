@@ -4732,3 +4732,132 @@ html, body {
     width: 100%;
   }
 }
+
+/* Add these to your existing styles.css */
+
+/* Destination Package Button Alignment */
+.destination-package .package-cta {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto; /* Pushes buttons to bottom */
+  padding-top: 1rem;
+}
+
+.destination-package .package-cta .btn {
+  flex: 1;
+  min-width: 0; /* Allows buttons to shrink */
+  text-align: center;
+  padding: 0.75rem 0.5rem; /* Slightly reduced padding */
+}
+
+/* Ensure consistent height for all packages */
+.destination-package {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.package-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+  .destinations-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .destination-package {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .package-cta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .package-cta .btn {
+    width: 100%;
+  }
+
+  /* Hero section adjustments */
+  .destinations-hero h1 {
+    font-size: 2rem;
+  }
+
+  .destinations-hero p {
+    font-size: 1rem;
+  }
+
+  .filter-buttons {
+    flex-wrap: wrap;
+  }
+
+  .filter-buttons button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .destination-package {
+    width: 100%;
+  }
+
+  .package-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .package-content p {
+    font-size: 0.9rem;
+  }
+
+  .destinations-hero {
+    padding: 3rem 0;
+    height: 300px;
+  }
+
+  .destinations-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .filter-buttons {
+    gap: 0.5rem;
+  }
+
+  .filter-buttons button {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Ensure consistent image heights */
+.package-image {
+  height: 200px;
+}
+
+@media (max-width: 768px) {
+  .package-image {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .package-image {
+    height: 160px;
+  }
+}
+
+/* Make sure badges don't overlap on small screens */
+.package-badge {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.6rem;
+  max-width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
