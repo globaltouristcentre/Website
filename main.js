@@ -436,18 +436,62 @@ function initCommonTripForm() {
     const commonTripForm = document.getElementById('commonTripForm');
     if (!commonTripForm) return;
 
-    // Set selected trip when clicking book buttons
-    document.querySelectorAll('a[href="#common-lead-form"][data-trip]').forEach(button => {
-        button.addEventListener('click', function() {
-            document.getElementById('trip-selection').value = this.getAttribute('data-trip');
-            document.getElementById('common-lead-form').scrollIntoView({ behavior: 'smooth' });
+    // Function to set the trip value and scroll to form
+    function setTripAndScroll(tripValue) {
+        // Set the trip selection
+        const tripSelect = document.getElementById('trip-selection');
+        if (tripSelect) {
+            // Find the option that matches (case insensitive)
+            const options = Array.from(tripSelect.options);
+            const matchedOption = options.find(opt => 
+                opt.value.toLowerCase() === tripValue.toLowerCase()
+            );
+            if (matchedOption) {
+                tripSelect.value = matchedOption.value;
+            }
+        }
+
+        // Scroll to form
+        const formSection = document.getElementById('common-lead-form');
+        if (formSection) {
+            // Small timeout ensures smooth scroll works
+            setTimeout(() => {
+                formSection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }, 50);
+        }
+    }
+
+    // 1. Handle URL parameters on page load
+    function handleUrlParams() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const tripParam = urlParams.get('trip');
+        
+        if (tripParam) {
+            setTripAndScroll(tripParam);
+        }
+    }
+
+    // 2. Handle button clicks within the same page
+    document.querySelectorAll('.book-now-btn').forEach(button => {
+        button.addEventListener('click', function(e) {
+            const tripValue = this.getAttribute('data-trip') || 
+                             new URL(this.href).searchParams.get('trip');
+            if (tripValue) {
+                setTripAndScroll(tripValue);
+            }
         });
     });
 
+    // Run on page load
+    handleUrlParams();
+
+    // Existing form submission handler
     commonTripForm.addEventListener('submit', function(e) {
         e.preventDefault();
         
-        // Get form values
         const formData = {
             name: document.getElementById('common-name').value,
             email: document.getElementById('common-email').value,
@@ -457,13 +501,11 @@ function initCommonTripForm() {
             message: document.getElementById('common-message').value
         };
         
-        // Format WhatsApp message
         let whatsappMessage = `Hello Global Tourist Centre!%0A%0AI'm interested in booking a trip.%0A%0A`;
         whatsappMessage += `*Name:* ${formData.name}%0A*Email:* ${formData.email}%0A*Phone:* ${formData.phone}%0A`;
         whatsappMessage += `*Trip:* ${formData.trip}%0A*Group Size:* ${formData.groupSize}%0A`;
         if (formData.message) whatsappMessage += `*Special Requirements:* ${formData.message}%0A`;
         
-        // Open WhatsApp
         window.open(`https://wa.me/919067972295?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
         this.reset();
     });
