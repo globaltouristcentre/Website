@@ -17,6 +17,10 @@ document.addEventListener('DOMContentLoaded', function() {
     initCommonTripForm();
     initEnhancedFlightBooking();
     initGalleryCarousel();
+    initBookingModal();
+    initBookingForm();
+
+
 
     // Check for filter parameter on page load
     const urlParams = new URLSearchParams(window.location.search);
@@ -914,4 +918,86 @@ function initEnhancedFlightBooking() {
 
     // Initialize the enhanced flight booking
     init();
+}
+
+function initBookingModal() {
+    console.log('Attempting to initialize booking modal...');
+    const bookingModal = document.getElementById('bookingModal');
+    const bookingForm = document.getElementById('bookingForm');
+    
+    if (!bookingModal || !bookingForm) {
+        console.error('Booking modal or form element not found');
+        return;
+    }
+
+    // Get the current trip name from the page
+    const getCurrentTripName = () => {
+        const heroTitle = document.querySelector('.trip-hero-content h1');
+        if (heroTitle) return heroTitle.textContent.trim();
+        return document.title.replace('Global Tourist Centre |', '').trim();
+    };
+
+    // Close modal handlers (keep your existing code)
+
+    bookingForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form values
+        const name = document.getElementById('bookingName').value.trim();
+        const phone = document.getElementById('bookingPhone').value.trim();
+        const travelers = document.getElementById('bookingCount').value;
+        const message = document.getElementById('bookingMessage').value.trim();
+        
+        // Get current trip name
+        const tripName = getCurrentTripName();
+
+        // Basic validation
+        if (!name || !phone || !travelers) {
+            alert('Please fill out all required fields');
+            return;
+        }
+
+        // Format travelers text
+        const travelersText = {
+            '1': '1 Person',
+            '2': '2 People',
+            '3-5': '3-5 People',
+            '6+': '6+ People'
+        }[travelers] || travelers + ' People';
+
+        // Format WhatsApp message with better structure
+        const whatsappMessage = 
+`*NEW BOOKING ENQUIRY - ${tripName.toUpperCase()}*
+───────────────────────────────
+*👤 Guest Details:*
+• *Name:* ${name}
+• *Contact:* ${phone}
+
+*✈️ Trip Details:*
+• *Tour Package:* ${tripName}
+• *Number of Travelers:* ${travelersText}
+${message ? `• *Special Requirements:* ${message}\n` : ''}
+───────────────────────────────
+Please provide availability and payment details. Thank you!`;
+
+        // Create WhatsApp URL
+        const whatsappUrl = `https://wa.me/919067972295?text=${encodeURIComponent(whatsappMessage)}`;
+        
+        // Open WhatsApp (keep your existing code)
+        try {
+            const newWindow = window.open(whatsappUrl, '_blank');
+            
+            if (!newWindow || newWindow.closed || typeof newWindow.closed == 'undefined') {
+                window.location.href = whatsappUrl;
+            }
+            
+            // Reset form and close modal
+            bookingForm.reset();
+            bookingModal.classList.remove('active');
+            document.body.style.overflow = '';
+        } catch (error) {
+            console.error('Error opening WhatsApp:', error);
+            alert('Error opening WhatsApp. Please try again or contact us directly.');
+        }
+    });
 }

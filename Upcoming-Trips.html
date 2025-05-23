@@ -247,8 +247,7 @@
         </ul>
     
         <p class="limited-offer"><i class="fas fa-exclamation-circle"></i> <strong>Special price: ₹49,999 per person!</strong> Contact us today to secure your spot in this limited-seat group tour.</p>
-        <a href="#common-lead-form" class="btn btn-primary" data-trip="Sikkim-Darjeeling-Gangtok Group Trip (May 27-Jun 2)">Reserve Your Seat Now</a>
-        <a href="Itinerary/Sikkim-Itinerary.html" class="btn btn-outline">Get Itinerary</a>
+        <a href="Itinerary/Sikkim-Itinerary.html" class="btn btn-primary">Get Itinerary</a>
     </div>
     </div>
 
@@ -286,79 +285,12 @@
         </ul>
     
         <p class="limited-offer"><i class="fas fa-exclamation-circle"></i> <strong>Special monsoon price: ₹29,999 per person!</strong> Limited seats available for this unique experience.</p>
-        <a href="#common-lead-form" class="btn btn-primary" data-trip="Kerala Backwaters Trip (Jun 26-Jul 2)">Reserve Your Seat Now</a>
-        <a href="Itinerary/Kerala-Itinerary.html" class="btn btn-outline">Get Itinerary</a>
+        <a href="Itinerary/Kerala-Itinerary.html" class="btn btn-primary">Get Itinerary</a>
     </div>
     </div>
                 
     </section>
 
-    <!-- Common Lead Form Section -->
-    <section class="common-lead-form section" id="common-lead-form">
-        <div class="container">
-            <div class="common-form-container">
-                <div class="common-form-header">
-                    <h2 class="section-title">Book Your Trip</h2>
-                    <p class="section-subtitle">Fill this form to check availability and get booking details</p>
-                </div>
-                
-                <form id="commonTripForm" class="common-lead-form">
-                    <div class="common-form-group">
-                        <label for="common-name">Full Name*</label>
-                        <input type="text" id="common-name" name="name" required placeholder="Your full name">
-                    </div>
-                    
-                    <div class="common-form-group">
-                        <label for="common-email">Email*</label>
-                        <input type="email" id="common-email" name="email" required placeholder="Your email address">
-                    </div>
-                    
-                    <div class="common-form-group">
-                        <label for="common-phone">Phone Number*</label>
-                        <input type="tel" id="common-phone" name="phone" required placeholder="Your WhatsApp number">
-                    </div>
-                    
-                    <div class="common-form-group">
-                        <label for="trip-selection">Select Trip*</label>
-                        <select id="trip-selection" name="trip-selection" required>
-                            <option value="">Choose your trip</option>
-                            <option value="Sikkim-Darjeeling-Gangtok">Sikkim-Darjeeling-Gangtok Group Trip (May 27-Jun 2)</option>
-                            <option value="Netravali">Netravali Day Trip</option>
-                            <option value="Jaipur">Jaipur & Udaipur</option>
-                            <option value="Hampi">Hampi Tour</option>
-                            <option value="Dudhsagar">Dudhsagar & Spice Plantation Day Trip</option>
-                            <option value="South-Goa">South Goa Exploration Day Trip</option>
-                            <option value="Andaman">Andaman Trip</option>
-                            <option value="Aurangabad">Aurangabad Trip</option>
-                            <option value="Leh">Leh Trip</option>
-                            <option value="Kerala">Kerala Backwaters Trip (Jun 26-Jul 2)</option>
-                            <option value="Jaisalmer">Jaisalmer & Jodhpur Trip</option>
-                        </select>
-                    </div>
-                    
-                    <div class="common-form-group">
-                        <label for="common-group-size">Number of Travelers*</label>
-                        <select id="common-group-size" name="group-size" required>
-                            <option value="">Select group size</option>
-                            <option value="1">1 Person</option>
-                            <option value="2">2 People</option>
-                            <option value="3-5">3-5 People</option>
-                            <option value="6+">6+ People</option>
-                        </select>
-                    </div>
-                    
-                    <div class="common-form-group">
-                        <label for="common-message">Any Special Requirements?</label>
-                        <textarea id="common-message" name="message" placeholder="Dietary needs, mobility requirements, etc."></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary">
-                        <i class="fab fa-whatsapp"></i> Send Inquiry
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
 
     <!-- WhatsApp Floating Button -->
     <a href="https://wa.me/919067972295" class="whatsapp-float" target="_blank">
@@ -449,48 +381,6 @@
                 'languageDropdown'
             );
         }
-
-        // Trip Form Submission
-        document.querySelectorAll('a[href="#common-lead-form"][data-trip]').forEach(button => {
-            button.addEventListener('click', function() {
-                const tripName = this.getAttribute('data-trip');
-                document.getElementById('trip-selection').value = tripName;
-            });
-        });
-
-        // Common form submission
-        document.getElementById('commonTripForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form values
-            const name = document.getElementById('common-name').value;
-            const email = document.getElementById('common-email').value;
-            const phone = document.getElementById('common-phone').value;
-            const trip = document.getElementById('trip-selection').value;
-            const groupSize = document.getElementById('common-group-size').value;
-            const message = document.getElementById('common-message').value;
-            
-            // Format the WhatsApp message
-            let whatsappMessage = `Hello Global Tourist Centre!%0A%0AI'm interested in booking a trip.%0A%0A`;
-            whatsappMessage += `*Name:* ${name}%0A`;
-            whatsappMessage += `*Email:* ${email}%0A`;
-            whatsappMessage += `*Phone:* ${phone}%0A`;
-            whatsappMessage += `*Trip:* ${trip}%0A`;
-            whatsappMessage += `*Group Size:* ${groupSize}%0A`;
-            if (message) whatsappMessage += `*Special Requirements:* ${message}%0A`;
-            
-            // Your WhatsApp number
-            const whatsappNumber = '919067972295';
-            
-            // Create the WhatsApp URL
-            const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
-            
-            // Open the URL in a new tab
-            window.open(whatsappUrl, '_blank');
-            
-            // Optional: Reset the form
-            this.reset();
-        });
     </script>
 </body>
 </html>
