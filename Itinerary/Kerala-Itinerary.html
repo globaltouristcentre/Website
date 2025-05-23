@@ -56,7 +56,7 @@
     <!-- Web Manifest (PWA) -->
     <link rel="manifest" href="../assets/favicon/site.webmanifest" />
     <meta name="apple-mobile-web-app-title" content="GlobalTouristCentre" />    
-    </head>
+</head>
 
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -167,12 +167,56 @@
                     </div>
                 </div>
                 <div class="hero-buttons">
-                    <a href="../Upcoming-Trips.html?trip=Kerala#common-lead-form" class="btn btn-primary book-now-btn">
+                    <button class="btn btn-primary book-now-btn" onclick="document.getElementById('bookingModal').classList.add('active'); document.body.style.overflow = 'hidden';">
                         <i class="fas fa-ticket-alt"></i> Book This Tour
-                    </a>
+                    </button>
                     <a href="#itinerary" class="btn btn-outline">
                         <i class="fas fa-list-ul"></i> View Itinerary
                     </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Facts Section -->
+    <section class="quick-facts-section section">
+        <div class="container">
+            <div class="quick-facts-grid">
+                <div class="quick-fact-card">
+                    <div class="quick-fact-icon">
+                        <i class="fas fa-rupee-sign"></i>
+                    </div>
+                    <div class="quick-fact-content">
+                        <h3>Starting From</h3>
+                        <p>₹29,999/- per person</p>
+                    </div>
+                </div>
+                <div class="quick-fact-card">
+                    <div class="quick-fact-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="quick-fact-content">
+                        <h3>Group Size</h3>
+                        <p>12-18 travelers</p>
+                    </div>
+                </div>
+                <div class="quick-fact-card">
+                    <div class="quick-fact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="quick-fact-content">
+                        <h3>Next Departure</h3>
+                        <p>15 July 2025</p>
+                    </div>
+                </div>
+                <div class="quick-fact-card">
+                    <div class="quick-fact-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="quick-fact-content">
+                        <h3>Rating</h3>
+                        <p>4.9/5 (87 reviews)</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -182,8 +226,8 @@
     <section class="trip-features section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Tour Highlights</h2>
-                <p class="section-subtitle">What makes this Kerala tour special</p>
+                <h2 class="section-title">Why Choose This Tour</h2>
+                <p class="section-subtitle">Experience the best of Kerala with these exclusive highlights</p>
             </div>
             
             <div class="features-grid">
@@ -223,126 +267,232 @@
     </section>
 
     <!-- Itinerary Section -->
-    <section class="section" id="itinerary">
+    <section class="itinerary-section" id="itinerary">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Detailed Itinerary</h2>
+                <h2 class="section-title">Tour Itinerary</h2>
                 <p class="section-subtitle">Day-by-day breakdown of your Kerala experience</p>
             </div>
             
-            <div class="itinerary-timeline">
+            <div class="itinerary-container">
                 <!-- Day 1 -->
-                <div class="timeline-item">
-                    <div class="timeline-day">1</div>
-                    <div class="timeline-content">
-                        <h3>Arrival in Trivandrum</h3>
-                        <p>Begin your Kerala adventure with arrival in Trivandrum.</p>
-                        <ul class="trip-inclusions">
-                            <li><i class="fas fa-plane"></i> Flight arrival at Trivandrum Airport</li>
-                            <li><i class="fas fa-hotel"></i> Transfer to hotel for check-in</li>
-                            <li><i class="fas fa-bed"></i> Overnight stay in Trivandrum</li>
-                        </ul>
+                <div class="itinerary-day">
+                    <div class="day-number">1</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Arrival in Trivandrum</h3>
+                        <p class="day-description">Begin your Kerala adventure with arrival in Trivandrum.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-plane"></i>
+                                </div>
+                                <div class="highlight-text">Flight arrival at Trivandrum Airport</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-hotel"></i>
+                                </div>
+                                <div class="highlight-text">Transfer to hotel for check-in</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-bed"></i>
+                                </div>
+                                <div class="highlight-text">Overnight stay in Trivandrum</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- Day 2 -->
-                <div class="timeline-item">
-                    <div class="timeline-day">2</div>
-                    <div class="timeline-content">
-                        <h3>Trivandrum - Kovalam</h3>
-                        <p>Explore Trivandrum's rich culture before heading to beachside Kovalam.</p>
-                        <ul class="trip-inclusions">
-                            <li><i class="fas fa-utensils"></i> Breakfast at hotel</li>
-                            <li><i class="fas fa-landmark"></i> Visit Padmanabhaswamy Temple (richest temple in India)</li>
-                            <li><i class="fas fa-mountain"></i> Jatayu Earth Center (world's largest bird sculpture)</li>
-                            <li><i class="fas fa-monument"></i> Azhimala Shiva Statue & beach visit</li>
-                            <li><i class="fas fa-hotel"></i> Check-in at Kovalam hotel</li>
-                            <li><i class="fas fa-umbrella-beach"></i> Evening at leisure in Kovalam</li>
-                        </ul>
+                <div class="itinerary-day">
+                    <div class="day-number">2</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Trivandrum - Kovalam</h3>
+                        <p class="day-description">Explore Trivandrum's rich culture before heading to beachside Kovalam.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <div class="highlight-text">Breakfast at hotel</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-landmark"></i>
+                                </div>
+                                <div class="highlight-text">Padmanabhaswamy Temple visit</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-mountain"></i>
+                                </div>
+                                <div class="highlight-text">Jatayu Earth Center</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-monument"></i>
+                                </div>
+                                <div class="highlight-text">Azhimala Shiva Statue & beach visit</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- Day 3 -->
-                <div class="timeline-item">
-                    <div class="timeline-day">3</div>
-                    <div class="timeline-content">
-                        <h3>Kovalam - Alleppey (Houseboat)</h3>
-                        <p>Experience Kerala's famous backwaters with an overnight houseboat stay.</p>
-                        <ul class="trip-inclusions">
-                            <li><i class="fas fa-utensils"></i> Breakfast at hotel</li>
-                            <li><i class="fas fa-road"></i> Drive to Alleppey (approx. 3 hours)</li>
-                            <li><i class="fas fa-ship"></i> Board traditional Kerala houseboat</li>
-                            <li><i class="fas fa-utensils"></i> Lunch, evening snacks & dinner onboard</li>
-                            <li><i class="fas fa-water"></i> Cruise through scenic backwaters</li>
-                            <li><i class="fas fa-bed"></i> Overnight on houseboat</li>
-                        </ul>
+                <div class="itinerary-day">
+                    <div class="day-number">3</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Kovalam - Alleppey (Houseboat)</h3>
+                        <p class="day-description">Experience Kerala's famous backwaters with an overnight houseboat stay.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <div class="highlight-text">Breakfast at hotel</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-road"></i>
+                                </div>
+                                <div class="highlight-text">Drive to Alleppey (approx. 3 hours)</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-ship"></i>
+                                </div>
+                                <div class="highlight-text">Board traditional Kerala houseboat</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-water"></i>
+                                </div>
+                                <div class="highlight-text">Cruise through scenic backwaters</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- Day 4 -->
-                <div class="timeline-item">
-                    <div class="timeline-day">4</div>
-                    <div class="timeline-content">
-                        <h3>Alleppey - Suryanelli (Camping)</h3>
-                        <p>From backwaters to tea plantations for a unique camping experience.</p>
-                        <ul class="trip-inclusions">
-                            <li><i class="fas fa-utensils"></i> Breakfast on houseboat</li>
-                            <li><i class="fas fa-road"></i> Drive to Suryanelli via waterfalls</li>
-                            <li><i class="fas fa-water"></i> Visit Cheeyappara & Valara Waterfalls</li>
-                            <li><i class="fas fa-campground"></i> Check-in at tea plantation campsite</li>
-                            <li><i class="fas fa-cocktail"></i> Welcome drink on arrival</li>
-                            <li><i class="fas fa-hiking"></i> Optional Phantom Hill exploration</li>
-                            <li><i class="fas fa-fire"></i> Campfire & dinner under the stars</li>
-                        </ul>
+                <div class="itinerary-day">
+                    <div class="day-number">4</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Alleppey - Suryanelli (Camping)</h3>
+                        <p class="day-description">From backwaters to tea plantations for a unique camping experience.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <div class="highlight-text">Breakfast on houseboat</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-road"></i>
+                                </div>
+                                <div class="highlight-text">Drive to Suryanelli via waterfalls</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-water"></i>
+                                </div>
+                                <div class="highlight-text">Cheeyappara & Valara Waterfalls visit</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-campground"></i>
+                                </div>
+                                <div class="highlight-text">Tea plantation campsite check-in</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- Day 5 -->
-                <div class="timeline-item">
-                    <div class="timeline-day">5</div>
-                    <div class="timeline-content">
-                        <h3>Suryanelli - Munnar</h3>
-                        <p>Sunrise jeep safari followed by exploration of Munnar's tea country.</p>
-                        <ul class="trip-inclusions">
-                            <li><i class="fas fa-car"></i> Early morning jeep safari to Kolukkumalai (04:30 AM)</li>
-                            <li><i class="fas fa-sun"></i> Sunrise at highest tea plantation</li>
-                            <li><i class="fas fa-utensils"></i> Breakfast at campsite (08:30 AM)</li>
-                            <li><i class="fas fa-road"></i> Drive to Munnar</li>
-                            <li><i class="fas fa-water"></i> Visit Mattupetty Dam & Echo Point</li>
-                            <li><i class="fas fa-road"></i> Scenic Gap Road drive</li>
-                            <li><i class="fas fa-leaf"></i> Botanical garden visit</li>
-                            <li><i class="fas fa-theater-masks"></i> Kathakali dance performance</li>
-                            <li><i class="fas fa-hotel"></i> Check-in at Munnar hotel</li>
-                        </ul>
+                <div class="itinerary-day">
+                    <div class="day-number">5</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Suryanelli - Munnar</h3>
+                        <p class="day-description">Sunrise jeep safari followed by exploration of Munnar's tea country.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-car"></i>
+                                </div>
+                                <div class="highlight-text">Early morning jeep safari to Kolukkumalai</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-sun"></i>
+                                </div>
+                                <div class="highlight-text">Sunrise at highest tea plantation</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <div class="highlight-text">Botanical garden visit</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-theater-masks"></i>
+                                </div>
+                                <div class="highlight-text">Kathakali dance performance</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- Day 6 -->
-                <div class="timeline-item">
-                    <div class="timeline-day">6</div>
-                    <div class="timeline-content">
-                        <h3>Munnar - Kochi - Departure</h3>
-                        <p>Final day exploring Munnar before return journey.</p>
-                        <ul class="trip-inclusions">
-                            <li><i class="fas fa-utensils"></i> Breakfast at hotel</li>
-                            <li><i class="fas fa-road"></i> Drive to Kochi (approx. 4 hours)</li>
-                            <li><i class="fas fa-umbrella-beach"></i> Kochi sightseeing (time permitting)</li>
-                            <li><i class="fas fa-subway"></i> Drop at Ernakulam Railway Station by 8 PM</li>
-                            <li><i class="fas fa-train"></i> Overnight train journey back to Goa</li>
-                        </ul>
+                <div class="itinerary-day">
+                    <div class="day-number">6</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Munnar - Kochi - Departure</h3>
+                        <p class="day-description">Final day exploring Munnar before return journey.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <div class="highlight-text">Breakfast at hotel</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-road"></i>
+                                </div>
+                                <div class="highlight-text">Drive to Kochi (approx. 4 hours)</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-subway"></i>
+                                </div>
+                                <div class="highlight-text">Drop at Ernakulam Railway Station</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- Day 7 -->
-                <div class="timeline-item">
-                    <div class="timeline-day">7</div>
-                    <div class="timeline-content">
-                        <h3>Arrival in Goa</h3>
-                        <p>Return home with unforgettable memories of Kerala.</p>
-                        <ul class="trip-inclusions">
-                            <li><i class="fas fa-train"></i> Arrival in Goa by 11:50 AM</li>
-                            <li><i class="fas fa-heart"></i> Fond memories of Kerala's backwaters and tea gardens</li>
-                        </ul>
+                <div class="itinerary-day">
+                    <div class="day-number">7</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Arrival in Goa</h3>
+                        <p class="day-description">Return home with unforgettable memories of Kerala.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-train"></i>
+                                </div>
+                                <div class="highlight-text">Arrival in Goa by 11:50 AM</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="highlight-text">Fond memories of Kerala</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -355,9 +505,12 @@
             <div class="section-header">
                 <h2 class="section-title">Tour Details</h2>
                 <p class="section-subtitle">What's included and what's not</p>
+                <button class="btn btn-outline toggle-details" id="toggleDetails">
+                    <i class="fas fa-chevron-down"></i> Show Details
+                </button>
             </div>
             
-            <div class="inclusions-container">
+            <div class="inclusions-container" id="detailsContainer" style="display: none;">
                 <div class="inclusions-box">
                     <h3><i class="fas fa-check-circle"></i> Inclusions</h3>
                     <ul class="inclusions-list">
@@ -393,9 +546,12 @@
             <div class="section-header">
                 <h2 class="section-title">Kerala Gallery</h2>
                 <p class="section-subtitle">A glimpse of what awaits you</p>
+                <button class="btn btn-outline toggle-gallery" id="toggleGallery">
+                    <i class="fas fa-chevron-down"></i> Show Gallery
+                </button>
             </div>
             
-            <div class="gallery-grid">
+            <div class="gallery-grid" id="galleryContainer" style="display: none;">
                 <div class="gallery-item">
                     <img src="../assets/destinations/kerala/backwaters.webp" alt="Kerala Backwaters" loading="lazy">
                     <div class="gallery-overlay">
@@ -441,17 +597,99 @@
         </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Traveler Reviews</h2>
+                <p class="section-subtitle">What our guests say about this tour</p>
+                <button class="btn btn-outline toggle-testimonials" id="toggleTestimonials">
+                    <i class="fas fa-chevron-down"></i> Show Reviews
+                </button>
+            </div>
+            
+            <div class="testimonials-slider" id="testimonialsContainer" style="display: none;">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">The houseboat experience was magical! Waking up to the gentle waves and watching the sunrise over the backwaters is something I'll never forget. The tour was perfectly organized.</p>
+                        <div class="client-info">
+                            <div class="client-details">
+                                <h4>Priya M.</h4>
+                                <p>Traveled June 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">The tea plantation camping was the highlight for me. The views were breathtaking, and the campfire under the stars was so romantic. Our guide was knowledgeable and made the trip special.</p>
+                        <div class="client-info">
+                            <div class="client-details">
+                                <h4>Raj K.</h4>
+                                <p>Traveled May 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">The Kolukkumalai jeep safari was worth waking up at 4am! Seeing the sunrise over the tea plantations was spectacular. The tour had a great mix of activities and relaxation.</p>
+                        <div class="client-info">
+                            <div class="client-details">
+                                <h4>Ananya S.</h4>
+                                <p>Traveled April 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonials-nav">
+                    <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Trip CTA Section -->
-    <section class="trip-cta section" id="common-lead-form">
+    <section class="trip-cta section">
         <div class="container">
             <div class="cta-content">
                 <h2>Ready for Your Kerala Adventure?</h2>
                 <p>Book now to secure your spot on this monsoon special getaway!</p>
                 
                 <div class="cta-buttons">
-                    <a href="../Upcoming-Trips.html?trip=Kerala#common-lead-form" class="btn btn-primary book-now-btn">
+                    <button class="btn btn-primary book-now-btn" onclick="document.getElementById('bookingModal').classList.add('active'); document.body.style.overflow = 'hidden';">
                         <i class="fas fa-ticket-alt"></i> Book This Tour
-                    </a>
+                    </button>
                     <a href="tel:+919067972295" class="btn btn-outline">
                         <i class="fas fa-phone"></i> Call for Enquiry
                     </a>
@@ -459,6 +697,50 @@
             </div>
         </div>
     </section>
+
+    <!-- Booking Modal -->
+<div class="modal" id="bookingModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>Book Kerala Backwaters Tour</h3>
+            <button type="button" class="modal-close">&times;</button>
+        </div>
+        <div class="modal-body">
+            <form id="bookingForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="bookingName">Full Name*</label>
+                        <input type="text" id="bookingName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookingPhone">WhatsApp Number*</label>
+                        <input type="tel" id="bookingPhone" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="bookingCount">Number of Travelers*</label>
+                    <select id="bookingCount" required>
+                        <option value="">Select</option>
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3-5">3-5 People</option>
+                        <option value="6+">6+ People</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="bookingMessage">Special Requirements (Optional)</label>
+                    <textarea id="bookingMessage" rows="3"></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">
+                    <i class="fab fa-whatsapp"></i> Book via WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
 
     <!-- WhatsApp Floating Button -->
     <a href="https://wa.me/919284248383" class="whatsapp-float" target="_blank">
@@ -550,6 +832,98 @@
         );
     }
     
+    // Collapsible sections functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        // Toggle itinerary days
+        const dayButtons = document.querySelectorAll('.toggle-day-btn');
+        dayButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const details = this.closest('.timeline-header').nextElementSibling;
+                details.style.display = details.style.display === 'none' ? 'block' : 'none';
+                this.innerHTML = details.style.display === 'none' ? 
+                    '<i class="fas fa-chevron-down"></i>' : '<i class="fas fa-chevron-up"></i>';
+            });
+        });
+        
+        // Toggle all itinerary days
+        const toggleItinerary = document.getElementById('toggleItinerary');
+        if (toggleItinerary) {
+            toggleItinerary.addEventListener('click', function() {
+                const allDetails = document.querySelectorAll('.timeline-details');
+                const isCollapsed = allDetails[0].style.display === 'none';
+                
+                allDetails.forEach(details => {
+                    details.style.display = isCollapsed ? 'block' : 'none';
+                });
+                
+                document.querySelectorAll('.toggle-day-btn').forEach(btn => {
+                    btn.innerHTML = isCollapsed ? 
+                        '<i class="fas fa-chevron-up"></i>' : '<i class="fas fa-chevron-down"></i>';
+                });
+                
+                this.innerHTML = isCollapsed ? 
+                    '<i class="fas fa-compress-alt"></i> Collapse All Days' : 
+                    '<i class="fas fa-expand-alt"></i> Expand All Days';
+            });
+        }
+        
+        // Toggle details section
+        const toggleDetails = document.getElementById('toggleDetails');
+        const detailsContainer = document.getElementById('detailsContainer');
+        if (toggleDetails && detailsContainer) {
+            toggleDetails.addEventListener('click', function() {
+                const isHidden = detailsContainer.style.display === 'none';
+                detailsContainer.style.display = isHidden ? 'block' : 'none';
+                this.innerHTML = isHidden ? 
+                    '<i class="fas fa-chevron-up"></i> Hide Details' : 
+                    '<i class="fas fa-chevron-down"></i> Show Details';
+            });
+        }
+        
+        // Toggle gallery section
+        const toggleGallery = document.getElementById('toggleGallery');
+        const galleryContainer = document.getElementById('galleryContainer');
+        if (toggleGallery && galleryContainer) {
+            toggleGallery.addEventListener('click', function() {
+                const isHidden = galleryContainer.style.display === 'none';
+                galleryContainer.style.display = isHidden ? 'grid' : 'none';
+                this.innerHTML = isHidden ? 
+                    '<i class="fas fa-chevron-up"></i> Hide Gallery' : 
+                    '<i class="fas fa-chevron-down"></i> Show Gallery';
+            });
+        }
+        
+        // Toggle testimonials section
+        const toggleTestimonials = document.getElementById('toggleTestimonials');
+        const testimonialsContainer = document.getElementById('testimonialsContainer');
+        if (toggleTestimonials && testimonialsContainer) {
+            toggleTestimonials.addEventListener('click', function() {
+                const isHidden = testimonialsContainer.style.display === 'none';
+                testimonialsContainer.style.display = isHidden ? 'block' : 'none';
+                this.innerHTML = isHidden ? 
+                    '<i class="fas fa-chevron-up"></i> Hide Reviews' : 
+                    '<i class="fas fa-chevron-down"></i> Show Reviews';
+            });
+        }
+    });
+
+     // Initialize components when DOM is loaded
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize booking modal
+        if (typeof initBookingModal === 'function') {
+            initBookingModal();
+            console.log('Booking modal initialized');
+        } else {
+            console.error('initBookingModal function not found');
+        }
+
+        // Initialize other components as needed
+        initMobileMenu();
+        initBackToTop();
+    });
+
+    
+
 </script>
 </body>
 </html>

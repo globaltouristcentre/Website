@@ -10,7 +10,7 @@
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Tourist Centre | Premium Travel Experiences</title>
+    <title>Global Tourist Centre | Hampi Heritage Tour</title>
     <meta name="description" content="Crafting unforgettable journeys since 1997. Your trusted travel partner for bespoke domestic and international tours.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,7 +56,7 @@
     <!-- Web Manifest (PWA) -->
     <link rel="manifest" href="../assets/favicon/site.webmanifest" />
     <meta name="apple-mobile-web-app-title" content="GlobalTouristCentre" />    
-    </head>
+</head>
 
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -168,9 +168,9 @@
                 </div>
                 
                 <div class="hero-buttons">
-                    <a href="../Upcoming-Trips.html?trip=Hampi#common-lead-form" class="btn btn-primary book-now-btn">
-                    <i class="fas fa-ticket-alt"></i> Book This Tour
-                    </a>
+                    <button class="btn btn-primary book-now-btn" onclick="document.getElementById('bookingModal').classList.add('active'); document.body.style.overflow = 'hidden';">
+                        <i class="fas fa-ticket-alt"></i> Book This Tour
+                    </button>
                     <a href="#itinerary" class="btn btn-outline">
                         <i class="fas fa-list-ul"></i> View Itinerary
                     </a>
@@ -183,8 +183,8 @@
     <section class="trip-features section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Tour Highlights</h2>
-                <p class="section-subtitle">What makes this heritage tour special</p>
+                <h2 class="section-title">Why Choose This Tour</h2>
+                <p class="section-subtitle">Experience the best of Hampi with these exclusive highlights</p>
             </div>
             
             <div class="features-grid">
@@ -224,76 +224,164 @@
     </section>
 
     <!-- Itinerary Section -->
-    <section class="section" id="itinerary">
+    <section class="itinerary-section" id="itinerary">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Detailed Itinerary</h2>
+                <h2 class="section-title">Tour Itinerary</h2>
                 <p class="section-subtitle">Day-by-day breakdown of your Hampi experience</p>
             </div>
             
-            <div class="itinerary-timeline">
+            <div class="itinerary-container">
                 <!-- Day 1 -->
-                <div class="timeline-item">
-                    <div class="timeline-day">1</div>
-                    <div class="timeline-content">
-                        <h3>Arrival at Hospete & Hampi Sightseeing</h3>
-                        <p>Arrive at Hospete Station and meet your pre-arranged car and driver. Check in to your hotel in Hospete.</p>
-                        <ul class="trip-inclusions">
-                            <li><i class="fas fa-train"></i> Arrival at Hospete Station</li>
-                            <li><i class="fas fa-hotel"></i> Check-in at Hospete hotel</li>
-                            <li><i class="fas fa-utensils"></i> Lunch at local restaurant</li>
-                            <li><i class="fas fa-temple"></i> Explore Sacred Hampi Complex:</li>
-                            <li>- Virupaksha Temple (spiritual heart of Hampi)</li>
-                            <li>- Hampi Bazaar ruins</li>
-                            <li>- Hemakuta Hill Temples (panoramic views)</li>
-                            <li>- Kadalekalu & Sasivekalu Ganesha statues</li>
-                            <li>- Lotus Mahal (Indo-Islamic architecture)</li>
-                            <li>- Elephant Stables (royal elephant housing)</li>
-                            <li>- Hazara Rama Temple (intricate Ramayana carvings)</li>
-                            <li>- Queen's Bath (royal bathing complex)</li>
-                            <li><i class="fas fa-moon"></i> Dinner & overnight stay in Hospete</li>
-                        </ul>
+                <div class="itinerary-day">
+                    <div class="day-number">1</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Arrival at Hospete & Hampi Sightseeing</h3>
+                        <p class="day-description">Arrive at Hospete Station and meet your pre-arranged car and driver. Check in to your hotel in Hospete.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-train"></i>
+                                </div>
+                                <div class="highlight-text">Arrival at Hospete Station</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-hotel"></i>
+                                </div>
+                                <div class="highlight-text">Check-in at Hospete hotel</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <div class="highlight-text">Lunch at local restaurant</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-temple"></i>
+                                </div>
+                                <div class="highlight-text">Explore Sacred Hampi Complex</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-landmark"></i>
+                                </div>
+                                <div class="highlight-text">Virupaksha Temple (spiritual heart of Hampi)</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-store"></i>
+                                </div>
+                                <div class="highlight-text">Hampi Bazaar ruins</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-mountain"></i>
+                                </div>
+                                <div class="highlight-text">Hemakuta Hill Temples (panoramic views)</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- Day 2 -->
-                <div class="timeline-item">
-                    <div class="timeline-day">2</div>
-                    <div class="timeline-content">
-                        <h3>Full-Day Hampi Exploration</h3>
-                        <p>After breakfast, full day exploring Hampi's architectural treasures:</p>
-                        <ul class="trip-inclusions">
-                            <li><i class="fas fa-utensils"></i> Breakfast at hotel</li>
-                            <li><i class="fas fa-temple"></i> Vittala Temple Complex (iconic Stone Chariot)</li>
-                            <li><i class="fas fa-balance-scale"></i> King's Balance ruins</li>
-                            <li><i class="fas fa-ship"></i> Coracle boat ride on Tungabhadra River</li>
-                            <li><i class="fas fa-utensils"></i> Lunch at riverside café</li>
-                            <li><i class="fas fa-landmark"></i> Riverside ruins & temples:</li>
-                            <li>- Achyutaraya Temple</li>
-                            <li>- Sule Bazaar ruins</li>
-                            <li>- Purandaradasa Mantapa</li>
-                            <li>- Kodandarama Temple riverside carvings</li>
-                            <li><i class="fas fa-mountain"></i> Anjaneya Hill (Hanuman Temple)</li>
-                            <li><i class="fas fa-water"></i> Evening at Tungabhadra Dam (optional boating)</li>
-                            <li><i class="fas fa-moon"></i> Dinner & overnight stay in Hospete</li>
-                        </ul>
+                <div class="itinerary-day">
+                    <div class="day-number">2</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Full-Day Hampi Exploration</h3>
+                        <p class="day-description">After breakfast, full day exploring Hampi's architectural treasures.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <div class="highlight-text">Breakfast at hotel</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-temple"></i>
+                                </div>
+                                <div class="highlight-text">Vittala Temple Complex (iconic Stone Chariot)</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-balance-scale"></i>
+                                </div>
+                                <div class="highlight-text">King's Balance ruins</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-ship"></i>
+                                </div>
+                                <div class="highlight-text">Coracle boat ride on Tungabhadra River</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <div class="highlight-text">Lunch at riverside café</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-landmark"></i>
+                                </div>
+                                <div class="highlight-text">Riverside ruins & temples</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-mountain"></i>
+                                </div>
+                                <div class="highlight-text">Anjaneya Hill (Hanuman Temple)</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-water"></i>
+                                </div>
+                                <div class="highlight-text">Evening at Tungabhadra Dam (optional boating)</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- Day 3 -->
-                <div class="timeline-item">
-                    <div class="timeline-day">3</div>
-                    <div class="timeline-content">
-                        <h3>Sanapur Lake & Departure</h3>
-                        <p>Morning after checkout, visit Sanapur Lake before departure:</p>
-                        <ul class="trip-inclusions">
-                            <li><i class="fas fa-utensils"></i> Breakfast at hotel</li>
-                            <li><i class="fas fa-water"></i> Sanapur Lake (optional coracle ride)</li>
-                            <li><i class="fas fa-temple"></i> Final visit to Vittala Temple</li>
-                            <li><i class="fas fa-utensils"></i> Lunch at local restaurant</li>
-                            <li><i class="fas fa-car"></i> Departure for return journey</li>
-                        </ul>
-                        <p>Tour concludes with wonderful memories of Hampi's heritage!</p>
+                <div class="itinerary-day">
+                    <div class="day-number">3</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Sanapur Lake & Departure</h3>
+                        <p class="day-description">Morning after checkout, visit Sanapur Lake before departure.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <div class="highlight-text">Breakfast at hotel</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-water"></i>
+                                </div>
+                                <div class="highlight-text">Sanapur Lake (optional coracle ride)</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-temple"></i>
+                                </div>
+                                <div class="highlight-text">Final visit to Vittala Temple</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <div class="highlight-text">Lunch at local restaurant</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-car"></i>
+                                </div>
+                                <div class="highlight-text">Departure for return journey</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -306,9 +394,12 @@
             <div class="section-header">
                 <h2 class="section-title">Tour Details</h2>
                 <p class="section-subtitle">What's included and what's not</p>
+                <button class="btn btn-outline toggle-details" id="toggleDetails">
+                    <i class="fas fa-chevron-down"></i> Show Details
+                </button>
             </div>
             
-            <div class="inclusions-container">
+            <div class="inclusions-container" id="detailsContainer" style="display: none;">
                 <div class="inclusions-box">
                     <h3><i class="fas fa-check-circle"></i> Inclusions</h3>
                     <ul class="inclusions-list">
@@ -340,9 +431,12 @@
             <div class="section-header">
                 <h2 class="section-title">Hampi Gallery</h2>
                 <p class="section-subtitle">A glimpse of what awaits you</p>
+                <button class="btn btn-outline toggle-gallery" id="toggleGallery">
+                    <i class="fas fa-chevron-down"></i> Show Gallery
+                </button>
             </div>
             
-            <div class="gallery-grid">
+            <div class="gallery-grid" id="galleryContainer" style="display: none;">
                 <div class="gallery-item">
                     <img src="../assets/destinations/karnataka/vittala-temple.webp" alt="Vittala Temple" loading="lazy">
                     <div class="gallery-overlay">
@@ -388,17 +482,99 @@
         </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Traveler Reviews</h2>
+                <p class="section-subtitle">What our guests say about this tour</p>
+                <button class="btn btn-outline toggle-testimonials" id="toggleTestimonials">
+                    <i class="fas fa-chevron-down"></i> Show Reviews
+                </button>
+            </div>
+            
+            <div class="testimonials-slider" id="testimonialsContainer" style="display: none;">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">The Vijayanagara ruins were absolutely breathtaking! Our guide was extremely knowledgeable and made the history come alive. The hotels were comfortable and the itinerary was perfectly paced.</p>
+                        <div class="client-info">
+                            <div class="client-details">
+                                <h4>Rahul S.</h4>
+                                <p>Traveled March 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">The coracle ride on Tungabhadra River was a highlight! The tour was well-organized with comfortable transportation and excellent accommodations. Hampi's ruins are truly a marvel.</p>
+                        <div class="client-info">
+                            <div class="client-details">
+                                <h4>Priya M.</h4>
+                                <p>Traveled February 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">The Vittala Temple was stunning, especially the musical pillars. The tour gave us just the right amount of time at each site. Would have loved one more day to explore the ruins in depth.</p>
+                        <div class="client-info">
+                            <div class="client-details">
+                                <h4>Ananya S.</h4>
+                                <p>Traveled January 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonials-nav">
+                    <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Trip CTA Section -->
-    <section class="trip-cta section" id="common-lead-form">
+    <section class="trip-cta section">
         <div class="container">
             <div class="cta-content">
                 <h2>Ready for Your Hampi Adventure?</h2>
                 <p>Step back in time to the Vijayanagara Empire. Book your Hampi tour now!</p>
-
+                
                 <div class="cta-buttons">
-                    <a href="../Upcoming-Trips.html?trip=Hampi#common-lead-form" class="btn btn-primary book-now-btn">
-                    <i class="fas fa-ticket-alt"></i> Book This Tour
-                    </a>
+                    <button class="btn btn-primary book-now-btn" onclick="document.getElementById('bookingModal').classList.add('active'); document.body.style.overflow = 'hidden';">
+                        <i class="fas fa-ticket-alt"></i> Book This Tour
+                    </button>
                     <a href="tel:+919067972295" class="btn btn-outline">
                         <i class="fas fa-phone"></i> Call for Enquiry
                     </a>
@@ -407,16 +583,59 @@
         </div>
     </section>
 
+    <!-- Booking Modal -->
+<div class="modal" id="bookingModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>Book Hampi Heritage Tour</h3>
+            <button type="button" class="modal-close">&times;</button>
+        </div>
+        <div class="modal-body">
+            <form id="bookingForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="bookingName">Full Name*</label>
+                        <input type="text" id="bookingName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookingPhone">WhatsApp Number*</label>
+                        <input type="tel" id="bookingPhone" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="bookingCount">Number of Travelers*</label>
+                    <select id="bookingCount" required>
+                        <option value="">Select</option>
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3-5">3-5 People</option>
+                        <option value="6+">6+ People</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="bookingMessage">Special Requirements (Optional)</label>
+                    <textarea id="bookingMessage" rows="3"></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">
+                    <i class="fab fa-whatsapp"></i> Book via WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
 
-<!-- WhatsApp Floating Button -->
-<a href="https://wa.me/919067972295" class="whatsapp-float" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-</a>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919284248383" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
-<!-- Back to Top -->
-<a href="#" class="back-to-top">
-    <i class="fas fa-arrow-up"></i>
-</a>
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 
 <!-- Footer -->
 <footer class="footer">
@@ -498,6 +717,98 @@
         );
     }
     
+    // Collapsible sections functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        // Toggle itinerary days
+        const dayButtons = document.querySelectorAll('.toggle-day-btn');
+        dayButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const details = this.closest('.timeline-header').nextElementSibling;
+                details.style.display = details.style.display === 'none' ? 'block' : 'none';
+                this.innerHTML = details.style.display === 'none' ? 
+                    '<i class="fas fa-chevron-down"></i>' : '<i class="fas fa-chevron-up"></i>';
+            });
+        });
+        
+        // Toggle all itinerary days
+        const toggleItinerary = document.getElementById('toggleItinerary');
+        if (toggleItinerary) {
+            toggleItinerary.addEventListener('click', function() {
+                const allDetails = document.querySelectorAll('.timeline-details');
+                const isCollapsed = allDetails[0].style.display === 'none';
+                
+                allDetails.forEach(details => {
+                    details.style.display = isCollapsed ? 'block' : 'none';
+                });
+                
+                document.querySelectorAll('.toggle-day-btn').forEach(btn => {
+                    btn.innerHTML = isCollapsed ? 
+                        '<i class="fas fa-chevron-up"></i>' : '<i class="fas fa-chevron-down"></i>';
+                });
+                
+                this.innerHTML = isCollapsed ? 
+                    '<i class="fas fa-compress-alt"></i> Collapse All Days' : 
+                    '<i class="fas fa-expand-alt"></i> Expand All Days';
+            });
+        }
+        
+        // Toggle details section
+        const toggleDetails = document.getElementById('toggleDetails');
+        const detailsContainer = document.getElementById('detailsContainer');
+        if (toggleDetails && detailsContainer) {
+            toggleDetails.addEventListener('click', function() {
+                const isHidden = detailsContainer.style.display === 'none';
+                detailsContainer.style.display = isHidden ? 'block' : 'none';
+                this.innerHTML = isHidden ? 
+                    '<i class="fas fa-chevron-up"></i> Hide Details' : 
+                    '<i class="fas fa-chevron-down"></i> Show Details';
+            });
+        }
+        
+        // Toggle gallery section
+        const toggleGallery = document.getElementById('toggleGallery');
+        const galleryContainer = document.getElementById('galleryContainer');
+        if (toggleGallery && galleryContainer) {
+            toggleGallery.addEventListener('click', function() {
+                const isHidden = galleryContainer.style.display === 'none';
+                galleryContainer.style.display = isHidden ? 'grid' : 'none';
+                this.innerHTML = isHidden ? 
+                    '<i class="fas fa-chevron-up"></i> Hide Gallery' : 
+                    '<i class="fas fa-chevron-down"></i> Show Gallery';
+            });
+        }
+        
+        // Toggle testimonials section
+        const toggleTestimonials = document.getElementById('toggleTestimonials');
+        const testimonialsContainer = document.getElementById('testimonialsContainer');
+        if (toggleTestimonials && testimonialsContainer) {
+            toggleTestimonials.addEventListener('click', function() {
+                const isHidden = testimonialsContainer.style.display === 'none';
+                testimonialsContainer.style.display = isHidden ? 'block' : 'none';
+                this.innerHTML = isHidden ? 
+                    '<i class="fas fa-chevron-up"></i> Hide Reviews' : 
+                    '<i class="fas fa-chevron-down"></i> Show Reviews';
+            });
+        }
+    });
+
+     // Initialize components when DOM is loaded
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize booking modal
+        if (typeof initBookingModal === 'function') {
+            initBookingModal();
+            console.log('Booking modal initialized');
+        } else {
+            console.error('initBookingModal function not found');
+        }
+
+        // Initialize other components as needed
+        initMobileMenu();
+        initBackToTop();
+    });
+
+    
+
 </script>
 </body>
 </html>

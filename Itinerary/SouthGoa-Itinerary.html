@@ -10,7 +10,7 @@
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Tourist Centre | Premium Travel Experiences</title>
+    <title>Global Tourist Centre | South Goa Exploration Day Trip</title>
     <meta name="description" content="Crafting unforgettable journeys since 1997. Your trusted travel partner for bespoke domestic and international tours.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,7 +56,8 @@
     <!-- Web Manifest (PWA) -->
     <link rel="manifest" href="../assets/favicon/site.webmanifest" />
     <meta name="apple-mobile-web-app-title" content="GlobalTouristCentre" />    
-    </head>
+</head>
+
 <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MCBHD3NT"
@@ -165,14 +166,57 @@
                         <span>3 Beautiful Beaches</span>
                     </div>
                 </div>
-                
                 <div class="hero-buttons">
-                    <a href="../Upcoming-Trips.html?trip=South-Goa#common-lead-form" class="btn btn-primary book-now-btn">
-                    <i class="fas fa-ticket-alt"></i> Book This Tour
-                    </a>
+                    <button class="btn btn-primary book-now-btn" onclick="document.getElementById('bookingModal').classList.add('active'); document.body.style.overflow = 'hidden';">
+                        <i class="fas fa-ticket-alt"></i> Book This Tour
+                    </button>
                     <a href="#itinerary" class="btn btn-outline">
                         <i class="fas fa-list-ul"></i> View Itinerary
                     </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Facts Section -->
+    <section class="quick-facts-section section">
+        <div class="container">
+            <div class="quick-facts-grid">
+                <div class="quick-fact-card">
+                    <div class="quick-fact-icon">
+                        <i class="fas fa-rupee-sign"></i>
+                    </div>
+                    <div class="quick-fact-content">
+                        <h3>Starting From</h3>
+                        <p>₹4,999/- per person</p>
+                    </div>
+                </div>
+                <div class="quick-fact-card">
+                    <div class="quick-fact-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="quick-fact-content">
+                        <h3>Group Size</h3>
+                        <p>6-12 travelers</p>
+                    </div>
+                </div>
+                <div class="quick-fact-card">
+                    <div class="quick-fact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="quick-fact-content">
+                        <h3>Next Departure</h3>
+                        <p>Every Saturday</p>
+                    </div>
+                </div>
+                <div class="quick-fact-card">
+                    <div class="quick-fact-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="quick-fact-content">
+                        <h3>Rating</h3>
+                        <p>4.7/5 (103 reviews)</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -182,8 +226,8 @@
     <section class="trip-features section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Trip Highlights</h2>
-                <p class="section-subtitle">What makes this coastal tour special</p>
+                <h2 class="section-title">Why Choose This Tour</h2>
+                <p class="section-subtitle">Experience the best of South Goa with these exclusive highlights</p>
             </div>
             
             <div class="features-grid">
@@ -223,118 +267,195 @@
     </section>
 
     <!-- Itinerary Section -->
-    <section class="section" id="itinerary">
+    <section class="itinerary-section" id="itinerary">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Detailed Itinerary</h2>
+                <h2 class="section-title">Tour Itinerary</h2>
                 <p class="section-subtitle">Hour-by-hour breakdown of your coastal adventure</p>
             </div>
             
-            <div class="itinerary-timeline">
+            <div class="itinerary-container">
                 <!-- 9:00 AM -->
-                <div class="timeline-item">
-                    <div class="timeline-day">9 AM</div>
-                    <div class="timeline-content">
-                        <h3>Departure from Your Location</h3>
-                        <p>Morning pickup from your hotel or designated meeting point in South Goa.</p>
-                        <ul class="trip-inclusions">
-                            <li><i class="fas fa-car"></i> Comfortable AC vehicle transfer</li>
-                            <li><i class="fas fa-suitcase"></i> Pack beach essentials: swimwear, towel, sunscreen</li>
-                        </ul>
+                <div class="itinerary-day">
+                    <div class="day-number">9 AM</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Departure from Your Location</h3>
+                        <p class="day-description">Morning pickup from your hotel or designated meeting point in South Goa.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-car"></i>
+                                </div>
+                                <div class="highlight-text">Comfortable AC vehicle transfer</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-suitcase"></i>
+                                </div>
+                                <div class="highlight-text">Pack beach essentials</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- 9:30 AM -->
-                <div class="timeline-item">
-                    <div class="timeline-day">9:30 AM</div>
-                    <div class="timeline-content">
-                        <h3>Agonda Beach</h3>
-                        <p>Start your day at serene Agonda Beach with its pristine shoreline.</p>
-                        <ul class="trip-inclusions">
-                            <li><i class="fas fa-walking"></i> Peaceful beach walk</li>
-                            <li><i class="fas fa-coffee"></i> Light breakfast at beachfront café</li>
-                        </ul>
+                <div class="itinerary-day">
+                    <div class="day-number">9:30 AM</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Agonda Beach</h3>
+                        <p class="day-description">Start your day at serene Agonda Beach with its pristine shoreline.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-walking"></i>
+                                </div>
+                                <div class="highlight-text">Peaceful beach walk</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-coffee"></i>
+                                </div>
+                                <div class="highlight-text">Light breakfast at beachfront café</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- 11:00 AM -->
-                <div class="timeline-item">
-                    <div class="timeline-day">11 AM</div>
-                    <div class="timeline-content">
-                        <h3>Palolem Beach & Boat Ride</h3>
-                        <p>Explore picturesque Palolem Beach and embark on a boat adventure.</p>
-                        <ul class="trip-inclusions">
-                            <li><i class="fas fa-ship"></i> Boat ride to nearby islands:</li>
-                            <li>- Butterfly Island (secluded beach)</li>
-                            <li>- Monkey Island (wildlife spotting)</li>
-                            <li><i class="fas fa-camera"></i> Photography opportunities</li>
-                        </ul>
+                <div class="itinerary-day">
+                    <div class="day-number">11 AM</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Palolem Beach & Boat Ride</h3>
+                        <p class="day-description">Explore picturesque Palolem Beach and embark on a boat adventure.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-ship"></i>
+                                </div>
+                                <div class="highlight-text">Boat ride to nearby islands</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-camera"></i>
+                                </div>
+                                <div class="highlight-text">Photography opportunities</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- 12:30 PM -->
-                <div class="timeline-item">
-                    <div class="timeline-day">12:30 PM</div>
-                    <div class="timeline-content">
-                        <h3>Butterfly Beach</h3>
-                        <p>Visit the stunning Butterfly Beach accessible only by boat.</p>
-                        <ul class="trip-inclusions">
-                            <li><i class="fas fa-umbrella-beach"></i> Relax on the beach</li>
-                            <li><i class="fas fa-camera"></i> Scenic photography spot</li>
-                        </ul>
+                <div class="itinerary-day">
+                    <div class="day-number">12:30 PM</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Butterfly Beach</h3>
+                        <p class="day-description">Visit the stunning Butterfly Beach accessible only by boat.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-umbrella-beach"></i>
+                                </div>
+                                <div class="highlight-text">Relax on the beach</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-camera"></i>
+                                </div>
+                                <div class="highlight-text">Scenic photography spot</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- 2:00 PM -->
-                <div class="timeline-item">
-                    <div class="timeline-day">2 PM</div>
-                    <div class="timeline-content">
-                        <h3>Cola Beach & Kayaking</h3>
-                        <p>Discover hidden Cola Beach with its freshwater lagoon.</p>
-                        <ul class="trip-inclusions">
-                            <li><i class="fas fa-water"></i> Kayaking in the lagoon</li>
-                            <li><i class="fas fa-swimmer"></i> Swimming in calm waters</li>
-                            <li><i class="fas fa-utensils"></i> Lunch at rustic beach shack</li>
-                        </ul>
+                <div class="itinerary-day">
+                    <div class="day-number">2 PM</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Cola Beach & Kayaking</h3>
+                        <p class="day-description">Discover hidden Cola Beach with its freshwater lagoon.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-water"></i>
+                                </div>
+                                <div class="highlight-text">Kayaking in the lagoon</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <div class="highlight-text">Lunch at rustic beach shack</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- 4:30 PM -->
-                <div class="timeline-item">
-                    <div class="timeline-day">4:30 PM</div>
-                    <div class="timeline-content">
-                        <h3>Cabo de Rama Fort</h3>
-                        <p>Visit the ancient Portuguese fort with panoramic sea views.</p>
-                        <ul class="trip-inclusions">
-                            <li><i class="fas fa-landmark"></i> Explore historic ruins</li>
-                            <li><i class="fas fa-binoculars"></i> Spectacular viewpoints</li>
-                        </ul>
+                <div class="itinerary-day">
+                    <div class="day-number">4:30 PM</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Cabo de Rama Fort</h3>
+                        <p class="day-description">Visit the ancient Portuguese fort with panoramic sea views.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-landmark"></i>
+                                </div>
+                                <div class="highlight-text">Explore historic ruins</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-binoculars"></i>
+                                </div>
+                                <div class="highlight-text">Spectacular viewpoints</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- 6:00 PM -->
-                <div class="timeline-item">
-                    <div class="timeline-day">6 PM</div>
-                    <div class="timeline-content">
-                        <h3>Sunset at Cabo de Rama Beach</h3>
-                        <p>Witness a magical sunset over the Arabian Sea.</p>
-                        <ul class="trip-inclusions">
-                            <li><i class="fas fa-sun"></i> Breathtaking sunset views</li>
-                            <li><i class="fas fa-camera"></i> Perfect photo opportunity</li>
-                        </ul>
+                <div class="itinerary-day">
+                    <div class="day-number">6 PM</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Sunset at Cabo de Rama Beach</h3>
+                        <p class="day-description">Witness a magical sunset over the Arabian Sea.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-sun"></i>
+                                </div>
+                                <div class="highlight-text">Breathtaking sunset views</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-camera"></i>
+                                </div>
+                                <div class="highlight-text">Perfect photo opportunity</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- 6:30 PM -->
-                <div class="timeline-item">
-                    <div class="timeline-day">6:30 PM</div>
-                    <div class="timeline-content">
-                        <h3>Return Journey</h3>
-                        <p>Depart for your original pickup location.</p>
-                        <ul class="trip-inclusions">
-                            <li><i class="fas fa-car"></i> Comfortable return transfer</li>
-                            <li><i class="fas fa-clock"></i> Estimated arrival by 8 PM</li>
-                        </ul>
+                <div class="itinerary-day">
+                    <div class="day-number">6:30 PM</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Return Journey</h3>
+                        <p class="day-description">Depart for your original pickup location.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-car"></i>
+                                </div>
+                                <div class="highlight-text">Comfortable return transfer</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="highlight-text">Estimated arrival by 8 PM</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -345,11 +466,14 @@
     <section class="section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Trip Details</h2>
+                <h2 class="section-title">Tour Details</h2>
                 <p class="section-subtitle">What's included and what's not</p>
+                <button class="btn btn-outline toggle-details" id="toggleDetails">
+                    <i class="fas fa-chevron-down"></i> Show Details
+                </button>
             </div>
             
-            <div class="inclusions-container">
+            <div class="inclusions-container" id="detailsContainer" style="display: none;">
                 <div class="inclusions-box">
                     <h3><i class="fas fa-check-circle"></i> Inclusions</h3>
                     <ul class="inclusions-list">
@@ -379,9 +503,12 @@
             <div class="section-header">
                 <h2 class="section-title">South Goa Gallery</h2>
                 <p class="section-subtitle">A glimpse of what awaits you</p>
+                <button class="btn btn-outline toggle-gallery" id="toggleGallery">
+                    <i class="fas fa-chevron-down"></i> Show Gallery
+                </button>
             </div>
             
-            <div class="gallery-grid">
+            <div class="gallery-grid" id="galleryContainer" style="display: none;">
                 <div class="gallery-item">
                     <img src="../assets/destinations/goa/agonda-beach.webp" alt="Agonda Beach" loading="lazy">
                     <div class="gallery-overlay">
@@ -427,17 +554,99 @@
         </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Traveler Reviews</h2>
+                <p class="section-subtitle">What our guests say about this tour</p>
+                <button class="btn btn-outline toggle-testimonials" id="toggleTestimonials">
+                    <i class="fas fa-chevron-down"></i> Show Reviews
+                </button>
+            </div>
+            
+            <div class="testimonials-slider" id="testimonialsContainer" style="display: none;">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">The boat ride to Butterfly Beach was the highlight of our trip! The entire day was perfectly planned with just the right amount of time at each location. Our guide was knowledgeable and made sure we had a great experience.</p>
+                        <div class="client-info">
+                            <div class="client-details">
+                                <h4>Priya M.</h4>
+                                <p>Traveled June 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">Cola Beach was absolutely magical! The kayaking experience in the lagoon was so peaceful. The sunset at Cabo de Rama was the perfect way to end the day. Highly recommend this tour to anyone visiting Goa.</p>
+                        <div class="client-info">
+                            <div class="client-details">
+                                <h4>Raj K.</h4>
+                                <p>Traveled May 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">We loved how this tour took us to hidden gems we would never have found on our own. The beaches were pristine and the boat ride was so much fun. The small group size made it feel very personalized.</p>
+                        <div class="client-info">
+                            <div class="client-details">
+                                <h4>Ananya S.</h4>
+                                <p>Traveled April 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonials-nav">
+                    <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Trip CTA Section -->
-    <section class="trip-cta section" id="common-lead-form">
+    <section class="trip-cta section">
         <div class="container">
             <div class="cta-content">
                 <h2>Ready for Your South Goa Adventure?</h2>
                 <p>Discover the pristine beaches and hidden gems of South Goa. Book now!</p>
                 
                 <div class="cta-buttons">
-                    <a href="../Upcoming-Trips.html?trip=South-Goa#common-lead-form" class="btn btn-primary book-now-btn">
-                    <i class="fas fa-ticket-alt"></i> Book This Tour
-                    </a>
+                    <button class="btn btn-primary book-now-btn" onclick="document.getElementById('bookingModal').classList.add('active'); document.body.style.overflow = 'hidden';">
+                        <i class="fas fa-ticket-alt"></i> Book This Tour
+                    </button>
                     <a href="tel:+919067972295" class="btn btn-outline">
                         <i class="fas fa-phone"></i> Call for Enquiry
                     </a>
@@ -445,6 +654,50 @@
             </div>
         </div>
     </section>
+
+    <!-- Booking Modal -->
+<div class="modal" id="bookingModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>Book South Goa Day Trip</h3>
+            <button type="button" class="modal-close">&times;</button>
+        </div>
+        <div class="modal-body">
+            <form id="bookingForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="bookingName">Full Name*</label>
+                        <input type="text" id="bookingName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookingPhone">WhatsApp Number*</label>
+                        <input type="tel" id="bookingPhone" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="bookingCount">Number of Travelers*</label>
+                    <select id="bookingCount" required>
+                        <option value="">Select</option>
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3-5">3-5 People</option>
+                        <option value="6+">6+ People</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="bookingMessage">Special Requirements (Optional)</label>
+                    <textarea id="bookingMessage" rows="3"></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">
+                    <i class="fab fa-whatsapp"></i> Book via WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
 
     <!-- WhatsApp Floating Button -->
     <a href="https://wa.me/919067972295" class="whatsapp-float" target="_blank">
@@ -536,6 +789,62 @@
         );
     }
     
+    // Collapsible sections functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        // Toggle details section
+        const toggleDetails = document.getElementById('toggleDetails');
+        const detailsContainer = document.getElementById('detailsContainer');
+        if (toggleDetails && detailsContainer) {
+            toggleDetails.addEventListener('click', function() {
+                const isHidden = detailsContainer.style.display === 'none';
+                detailsContainer.style.display = isHidden ? 'block' : 'none';
+                this.innerHTML = isHidden ? 
+                    '<i class="fas fa-chevron-up"></i> Hide Details' : 
+                    '<i class="fas fa-chevron-down"></i> Show Details';
+            });
+        }
+        
+        // Toggle gallery section
+        const toggleGallery = document.getElementById('toggleGallery');
+        const galleryContainer = document.getElementById('galleryContainer');
+        if (toggleGallery && galleryContainer) {
+            toggleGallery.addEventListener('click', function() {
+                const isHidden = galleryContainer.style.display === 'none';
+                galleryContainer.style.display = isHidden ? 'grid' : 'none';
+                this.innerHTML = isHidden ? 
+                    '<i class="fas fa-chevron-up"></i> Hide Gallery' : 
+                    '<i class="fas fa-chevron-down"></i> Show Gallery';
+            });
+        }
+        
+        // Toggle testimonials section
+        const toggleTestimonials = document.getElementById('toggleTestimonials');
+        const testimonialsContainer = document.getElementById('testimonialsContainer');
+        if (toggleTestimonials && testimonialsContainer) {
+            toggleTestimonials.addEventListener('click', function() {
+                const isHidden = testimonialsContainer.style.display === 'none';
+                testimonialsContainer.style.display = isHidden ? 'block' : 'none';
+                this.innerHTML = isHidden ? 
+                    '<i class="fas fa-chevron-up"></i> Hide Reviews' : 
+                    '<i class="fas fa-chevron-down"></i> Show Reviews';
+            });
+        }
+    });
+
+    // Initialize components when DOM is loaded
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize booking modal
+        if (typeof initBookingModal === 'function') {
+            initBookingModal();
+            console.log('Booking modal initialized');
+        } else {
+            console.error('initBookingModal function not found');
+        }
+
+        // Initialize other components as needed
+        initMobileMenu();
+        initBackToTop();
+    });
 </script>
 </body>
 </html>

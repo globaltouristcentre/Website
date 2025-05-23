@@ -10,7 +10,7 @@
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Tourist Centre | Premium Travel Experiences</title>
+    <title>Global Tourist Centre | Dudhsagar Waterfalls & Spice Plantation Tour</title>
     <meta name="description" content="Crafting unforgettable journeys since 1997. Your trusted travel partner for bespoke domestic and international tours.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,7 +56,7 @@
     <!-- Web Manifest (PWA) -->
     <link rel="manifest" href="../assets/favicon/site.webmanifest" />
     <meta name="apple-mobile-web-app-title" content="GlobalTouristCentre" />    
-    </head>
+</head>
 
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -168,12 +168,56 @@
                 </div>
                 
                 <div class="hero-buttons">
-                    <a href="../Upcoming-Trips.html?trip=Dudhsagar#common-lead-form" class="btn btn-primary book-now-btn">
-                    <i class="fas fa-ticket-alt"></i> Book This Tour
-                    </a>
+                    <button class="btn btn-primary book-now-btn" onclick="document.getElementById('bookingModal').classList.add('active'); document.body.style.overflow = 'hidden';">
+                        <i class="fas fa-ticket-alt"></i> Book This Tour
+                    </button>
                     <a href="#itinerary" class="btn btn-outline">
                         <i class="fas fa-list-ul"></i> View Itinerary
                     </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Facts Section -->
+    <section class="quick-facts-section section">
+        <div class="container">
+            <div class="quick-facts-grid">
+                <div class="quick-fact-card">
+                    <div class="quick-fact-icon">
+                        <i class="fas fa-rupee-sign"></i>
+                    </div>
+                    <div class="quick-fact-content">
+                        <h3>Starting From</h3>
+                        <p>₹2,999/- per person</p>
+                    </div>
+                </div>
+                <div class="quick-fact-card">
+                    <div class="quick-fact-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="quick-fact-content">
+                        <h3>Group Size</h3>
+                        <p>6-12 travelers</p>
+                    </div>
+                </div>
+                <div class="quick-fact-card">
+                    <div class="quick-fact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="quick-fact-content">
+                        <h3>Next Departure</h3>
+                        <p>Daily Departures</p>
+                    </div>
+                </div>
+                <div class="quick-fact-card">
+                    <div class="quick-fact-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="quick-fact-content">
+                        <h3>Rating</h3>
+                        <p>4.8/5 (112 reviews)</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -183,8 +227,8 @@
     <section class="trip-features section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Trip Highlights</h2>
-                <p class="section-subtitle">What makes this nature trip special</p>
+                <h2 class="section-title">Why Choose This Tour</h2>
+                <p class="section-subtitle">Experience the best of Goa with these exclusive highlights</p>
             </div>
             
             <div class="features-grid">
@@ -203,338 +247,655 @@
                     <h3>Jeep Safari</h3>
                     <p>Exciting off-road journey through Bhagwan Mahaveer Wildlife Sanctuary</p>
                 </div>
-
+                
                 <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-utensils"></i>
+                    <div class="feature-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Goan Lunch</h3>
+                    <p>Traditional buffet with local delicacies at the spice plantation</p>
                 </div>
-                <h3>Goan Lunch</h3>
-                <p>Traditional buffet with local delicacies at the spice plantation</p>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Spice Experience</h3>
+                    <p>Learn about spice cultivation and sample fresh products</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Itinerary Section -->
+    <section class="itinerary-section" id="itinerary">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tour Itinerary</h2>
+                <p class="section-subtitle">Hour-by-hour breakdown of your adventure</p>
+            </div>
             
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-spa"></i>
+            <div class="itinerary-container">
+                <!-- 6:00 AM -->
+                <div class="itinerary-day">
+                    <div class="day-number">6 AM</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Departure from Your Location</h3>
+                        <p class="day-description">Early morning pickup from your hotel or designated meeting point in Goa.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-car"></i>
+                                </div>
+                                <div class="highlight-text">Comfortable AC vehicle transfer</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-suitcase"></i>
+                                </div>
+                                <div class="highlight-text">Pack essentials: water, snacks, swimwear, towel</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <h3>Spice Experience</h3>
-                <p>Learn about spice cultivation and sample fresh products</p>
+                
+                <!-- 8:00 AM -->
+                <div class="itinerary-day">
+                    <div class="day-number">8 AM</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Arrival at Collem (Dudhsagar Base)</h3>
+                        <p class="day-description">Arrive at the base point for Dudhsagar Waterfalls access.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-car"></i>
+                                </div>
+                                <div class="highlight-text">Arrange jeep safari to waterfalls</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="highlight-text">45-minute thrilling jungle ride</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 9:00 AM -->
+                <div class="itinerary-day">
+                    <div class="day-number">9 AM</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Dudhsagar Waterfalls</h3>
+                        <p class="day-description">Experience the majestic 310-meter tall waterfalls.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-water"></i>
+                                </div>
+                                <div class="highlight-text">Photography opportunities</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-swimmer"></i>
+                                </div>
+                                <div class="highlight-text">Safe swimming areas (conditions permitting)</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="highlight-text">1.5-2 hours at the falls</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 11:30 AM -->
+                <div class="itinerary-day">
+                    <div class="day-number">11:30 AM</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Return Jeep Safari</h3>
+                        <p class="day-description">Scenic ride back through Bhagwan Mahaveer Wildlife Sanctuary.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-tree"></i>
+                                </div>
+                                <div class="highlight-text">Spot wildlife in natural habitat</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 12:30 PM -->
+                <div class="itinerary-day">
+                    <div class="day-number">12:30 PM</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Drive to Spice Plantation</h3>
+                        <p class="day-description">30-40 minute transfer to a renowned spice plantation.</p>
+                    </div>
+                </div>
+                
+                <!-- 1:00 PM -->
+                <div class="itinerary-day">
+                    <div class="day-number">1 PM</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Traditional Goan Lunch</h3>
+                        <p class="day-description">Buffet lunch featuring local specialties at the plantation.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-fish"></i>
+                                </div>
+                                <div class="highlight-text">Fish curry rice, chicken xacuti</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <div class="highlight-text">Vegetarian options available</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-glass-whiskey"></i>
+                                </div>
+                                <div class="highlight-text">Herbal teas & fresh juices</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 2:00 PM -->
+                <div class="itinerary-day">
+                    <div class="day-number">2 PM</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Spice Plantation Tour</h3>
+                        <p class="day-description">Guided exploration of the plantation's spice cultivation.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-seedling"></i>
+                                </div>
+                                <div class="highlight-text">See cardamom, pepper, nutmeg, vanilla</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-tree"></i>
+                                </div>
+                                <div class="highlight-text">Betel nut palms & cashew trees</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-apple-alt"></i>
+                                </div>
+                                <div class="highlight-text">Sample fresh spices & fruits</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="highlight-text">Duration: 1-1.5 hours</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 3:30 PM -->
+                <div class="itinerary-day">
+                    <div class="day-number">3:30 PM</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Return Journey</h3>
+                        <p class="day-description">Depart for your original pickup location.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-car"></i>
+                                </div>
+                                <div class="highlight-text">Comfortable return transfer</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="highlight-text">Estimated arrival by 5:30-6 PM</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inclusions/Exclusions Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tour Details</h2>
+                <p class="section-subtitle">What's included and what's not</p>
+                <button class="btn btn-outline toggle-details" id="toggleDetails">
+                    <i class="fas fa-chevron-down"></i> Show Details
+                </button>
+            </div>
+            
+            <div class="inclusions-container" id="detailsContainer" style="display: none;">
+                <div class="inclusions-box">
+                    <h3><i class="fas fa-check-circle"></i> Inclusions</h3>
+                    <ul class="inclusions-list">
+                        <li><i class="fas fa-check"></i> Round-trip AC vehicle transfers</li>
+                        <li><i class="fas fa-check"></i> Jeep safari to Dudhsagar Waterfalls</li>
+                        <li><i class="fas fa-check"></i> Traditional Goan buffet lunch</li>
+                        <li><i class="fas fa-check"></i> Guided spice plantation tour</li>
+                        <li><i class="fas fa-check"></i> Driver allowances and parking fees</li>
+                    </ul>
+                </div>
+                
+                <div class="exclusions-box">
+                    <h3><i class="fas fa-times-circle"></i> Exclusions</h3>
+                    <ul class="exclusions-list">
+                        <li><i class="fas fa-times"></i> Entry fees to any attractions</li>
+                        <li><i class="fas fa-times"></i> Personal expenses (shopping, tips, etc.)</li>
+                        <li><i class="fas fa-times"></i> Any activities not mentioned</li>
+                        <li><i class="fas fa-times"></i> Anything not specifically mentioned in inclusions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Dudhsagar & Spice Plantation Gallery</h2>
+                <p class="section-subtitle">A glimpse of what awaits you</p>
+                <button class="btn btn-outline toggle-gallery" id="toggleGallery">
+                    <i class="fas fa-chevron-down"></i> Show Gallery
+                </button>
+            </div>
+            
+            <div class="gallery-grid" id="galleryContainer" style="display: none;">
+                <div class="gallery-item">
+                    <img src="../assets/destinations/goa/dudhsagar.webp" alt="Dudhsagar Waterfall" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Dudhsagar Waterfall</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="../assets/destinations/goa/jeep-safari.webp" alt="Jeep Safari" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Jeep Safari</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="../assets/destinations/goa/spice-demo.webp" alt="Spice Demonstration" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Spice Demonstration</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="../assets/destinations/goa/goan-lunch.webp" alt="Goan Lunch" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Goan Lunch</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="../assets/destinations/goa/spice-garden.webp" alt="Spice Garden" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Spice Garden</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="../assets/destinations/goa/plantation-walk.webp" alt="Plantation Walk" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Plantation Walk</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Traveler Reviews</h2>
+                <p class="section-subtitle">What our guests say about this tour</p>
+                <button class="btn btn-outline toggle-testimonials" id="toggleTestimonials">
+                    <i class="fas fa-chevron-down"></i> Show Reviews
+                </button>
+            </div>
+            
+            <div class="testimonials-slider" id="testimonialsContainer" style="display: none;">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">The Dudhsagar waterfalls were absolutely breathtaking! The jeep ride through the jungle was so much fun. Our guide was very knowledgeable about the area and made sure we had the best experience.</p>
+                        <div class="client-info">
+                            <div class="client-details">
+                                <h4>Rahul S.</h4>
+                                <p>Traveled June 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">The spice plantation tour was the highlight for me. Learning about how different spices are grown and processed was fascinating. The lunch was delicious with authentic Goan flavors.</p>
+                        <div class="client-info">
+                            <div class="client-details">
+                                <h4>Priya M.</h4>
+                                <p>Traveled May 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">Perfect day trip from Goa! The waterfalls were spectacular and the spice plantation was very interesting. The tour was well-organized and the guides were professional.</p>
+                        <div class="client-info">
+                            <div class="client-details">
+                                <h4>Ananya S.</h4>
+                                <p>Traveled April 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonials-nav">
+                    <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trip CTA Section -->
+    <section class="trip-cta section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready for Your Dudhsagar Adventure?</h2>
+                <p>Experience two of Goa's most spectacular attractions in one day. Book now!</p>
+                
+                <div class="cta-buttons">
+                    <button class="btn btn-primary book-now-btn" onclick="document.getElementById('bookingModal').classList.add('active'); document.body.style.overflow = 'hidden';">
+                        <i class="fas fa-ticket-alt"></i> Book This Tour
+                    </button>
+                    <a href="tel:+919067972295" class="btn btn-outline">
+                        <i class="fas fa-phone"></i> Call for Enquiry
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Book Dudhsagar Day Trip</h3>
+                <button type="button" class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="bookingForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bookingName">Full Name*</label>
+                            <input type="text" id="bookingName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bookingPhone">WhatsApp Number*</label>
+                            <input type="tel" id="bookingPhone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="bookingCount">Number of Travelers*</label>
+                        <select id="bookingCount" required>
+                            <option value="">Select</option>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3-5">3-5 People</option>
+                            <option value="6+">6+ People</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="bookingDate">Preferred Date*</label>
+                        <input type="date" id="bookingDate" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="bookingMessage">Special Requirements (Optional)</label>
+                        <textarea id="bookingMessage" rows="3"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fab fa-whatsapp"></i> Book via WhatsApp
+                    </button>
+                </form>
             </div>
         </div>
     </div>
-</section>
 
-<!-- Itinerary Section -->
-<section class="section" id="itinerary">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">Detailed Itinerary</h2>
-            <p class="section-subtitle">Hour-by-hour breakdown of your adventure</p>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919067972295" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <a href="../index.html" class="footer-logo">
+                        <img src="../assets/logo.webp" alt="Global Tourist Centre" loading="lazy">
+                    </a>
+                    <p>Crafting unforgettable travel experiences since 1997. Your trusted partner for bespoke journeys across India and beyond.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/global__tourist" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/share/1H23K6UQPt/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/919067972295" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../Upcoming-Trips.html">Upcoming Trips</a></li>
+                        <li><a href="../Destinations.html">Destinations</a></li>
+                        <li><a href="../Flight-Bookings.html">Flight Bookings</a></li>
+                        <li><a href="../About-Us.html">About</a></li>
+                        <li><a href="../Services.html">Services</a></li>
+                        <li><a href="../Contact-Us.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col footer-services">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="../services.html#tours">Guided Tours</a></li>
+                        <li><a href="../Flight-Bookings.html">Flight Bookings</a></li>
+                        <li><a href="../services.html#hotels">Hotel Reservations</a></li>
+                        <li><a href="../services.html#visa">Visa Assistance</a></li>
+                        <li><a href="../services.html#exchange">Currency Exchange</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col footer-contact">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> <a href="https://maps.app.goo.gl/EJd5EcqR5NNoydfb7">Benaulim, Goa 403716</a></li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+919067972295">+91 9067972295</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:globaltouristcentre@gmail.com">globaltouristcentre@gmail.com</a></li>
+                        <li><i class="fas fa-clock"></i> Mon-Sun: 10:00 AM - 9:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Global Tourist Centre. All rights reserved.</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="../TOS/Privacy-Policy.html">Privacy Policy</a>
+                    <a href="../TOS/Terms-of-Service.html">Terms of Service</a>
+                </div>
+            </div>
         </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../main.js"></script>
+    <script>
+        // Initialize Google Translate
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { 
+                    pageLanguage: 'en',
+                    includedLanguages: 'en,es,fr,de,it,ru,hi',
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                }, 
+                'languageDropdown'
+            );
+        }
         
-        <div class="itinerary-timeline">
-            <!-- 6:00 AM -->
-            <div class="timeline-item">
-                <div class="timeline-day">6 AM</div>
-                <div class="timeline-content">
-                    <h3>Departure from Your Location</h3>
-                    <p>Early morning pickup from your hotel or designated meeting point in Goa.</p>
-                    <ul class="trip-inclusions">
-                        <li><i class="fas fa-car"></i> Comfortable AC vehicle transfer</li>
-                        <li><i class="fas fa-suitcase"></i> Pack essentials: water, snacks, swimwear, towel</li>
-                    </ul>
-                </div>
-            </div>
+        // Collapsible sections functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Toggle details section
+            const toggleDetails = document.getElementById('toggleDetails');
+            const detailsContainer = document.getElementById('detailsContainer');
+            if (toggleDetails && detailsContainer) {
+                toggleDetails.addEventListener('click', function() {
+                    const isHidden = detailsContainer.style.display === 'none';
+                    detailsContainer.style.display = isHidden ? 'block' : 'none';
+                    this.innerHTML = isHidden ? 
+                        '<i class="fas fa-chevron-up"></i> Hide Details' : 
+                        '<i class="fas fa-chevron-down"></i> Show Details';
+                });
+            }
             
-            <!-- 8:00 AM -->
-            <div class="timeline-item">
-                <div class="timeline-day">8 AM</div>
-                <div class="timeline-content">
-                    <h3>Arrival at Collem (Dudhsagar Base)</h3>
-                    <p>Arrive at the base point for Dudhsagar Waterfalls access.</p>
-                    <ul class="trip-inclusions">
-                        <li><i class="fas fa-car"></i> Arrange jeep safari to waterfalls</li>
-                        <li><i class="fas fa-clock"></i> 45-minute thrilling jungle ride</li>
-                    </ul>
-                </div>
-            </div>
+            // Toggle gallery section
+            const toggleGallery = document.getElementById('toggleGallery');
+            const galleryContainer = document.getElementById('galleryContainer');
+            if (toggleGallery && galleryContainer) {
+                toggleGallery.addEventListener('click', function() {
+                    const isHidden = galleryContainer.style.display === 'none';
+                    galleryContainer.style.display = isHidden ? 'grid' : 'none';
+                    this.innerHTML = isHidden ? 
+                        '<i class="fas fa-chevron-up"></i> Hide Gallery' : 
+                        '<i class="fas fa-chevron-down"></i> Show Gallery';
+                });
+            }
             
-            <!-- 9:00 AM -->
-            <div class="timeline-item">
-                <div class="timeline-day">9 AM</div>
-                <div class="timeline-content">
-                    <h3>Dudhsagar Waterfalls</h3>
-                    <p>Experience the majestic 310-meter tall waterfalls.</p>
-                    <ul class="trip-inclusions">
-                        <li><i class="fas fa-water"></i> Photography opportunities</li>
-                        <li><i class="fas fa-swimmer"></i> Safe swimming areas (conditions permitting)</li>
-                        <li><i class="fas fa-clock"></i> 1.5-2 hours at the falls</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <!-- 11:30 AM -->
-            <div class="timeline-item">
-                <div class="timeline-day">11:30 AM</div>
-                <div class="timeline-content">
-                    <h3>Return Jeep Safari</h3>
-                    <p>Scenic ride back through Bhagwan Mahaveer Wildlife Sanctuary.</p>
-                    <ul class="trip-inclusions">
-                        <li><i class="fas fa-tree"></i> Spot wildlife in natural habitat</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <!-- 12:30 PM -->
-            <div class="timeline-item">
-                <div class="timeline-day">12:30 PM</div>
-                <div class="timeline-content">
-                    <h3>Drive to Spice Plantation</h3>
-                    <p>30-40 minute transfer to a renowned spice plantation.</p>
-                </div>
-            </div>
-            
-            <!-- 1:00 PM -->
-            <div class="timeline-item">
-                <div class="timeline-day">1 PM</div>
-                <div class="timeline-content">
-                    <h3>Traditional Goan Lunch</h3>
-                    <p>Buffet lunch featuring local specialties at the plantation.</p>
-                    <ul class="trip-inclusions">
-                        <li><i class="fas fa-fish"></i> Fish curry rice, chicken xacuti</li>
-                        <li><i class="fas fa-leaf"></i> Vegetarian options available</li>
-                        <li><i class="fas fa-glass-whiskey"></i> Herbal teas & fresh juices</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <!-- 2:00 PM -->
-            <div class="timeline-item">
-                <div class="timeline-day">2 PM</div>
-                <div class="timeline-content">
-                    <h3>Spice Plantation Tour</h3>
-                    <p>Guided exploration of the plantation's spice cultivation.</p>
-                    <ul class="trip-inclusions">
-                        <li><i class="fas fa-seedling"></i> See cardamom, pepper, nutmeg, vanilla</li>
-                        <li><i class="fas fa-tree"></i> Betel nut palms & cashew trees</li>
-                        <li><i class="fas fa-apple-alt"></i> Sample fresh spices & fruits</li>
-                        <li><i class="fas fa-clock"></i> Duration: 1-1.5 hours</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <!-- 3:30 PM -->
-            <div class="timeline-item">
-                <div class="timeline-day">3:30 PM</div>
-                <div class="timeline-content">
-                    <h3>Return Journey</h3>
-                    <p>Depart for your original pickup location.</p>
-                    <ul class="trip-inclusions">
-                        <li><i class="fas fa-car"></i> Comfortable return transfer</li>
-                        <li><i class="fas fa-clock"></i> Estimated arrival by 5:30-6 PM</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+            // Toggle testimonials section
+            const toggleTestimonials = document.getElementById('toggleTestimonials');
+            const testimonialsContainer = document.getElementById('testimonialsContainer');
+            if (toggleTestimonials && testimonialsContainer) {
+                toggleTestimonials.addEventListener('click', function() {
+                    const isHidden = testimonialsContainer.style.display === 'none';
+                    testimonialsContainer.style.display = isHidden ? 'block' : 'none';
+                    this.innerHTML = isHidden ? 
+                        '<i class="fas fa-chevron-up"></i> Hide Reviews' : 
+                        '<i class="fas fa-chevron-down"></i> Show Reviews';
+                });
+            }
 
-<!-- Inclusions/Exclusions Section -->
-<section class="section">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">Trip Details</h2>
-            <p class="section-subtitle">What's included and what's not</p>
-        </div>
-        
-        <div class="inclusions-container">
-            <div class="inclusions-box">
-                <h3><i class="fas fa-check-circle"></i> Inclusions</h3>
-                <ul class="inclusions-list">
-                    <li><i class="fas fa-check"></i> Round-trip AC vehicle transfers</li>
-                    <li><i class="fas fa-check"></i> Jeep safari to Dudhsagar Waterfalls</li>
-                    <li><i class="fas fa-check"></i> Traditional Goan buffet lunch</li>
-                    <li><i class="fas fa-check"></i> Guided spice plantation tour</li>
-                    <li><i class="fas fa-check"></i> Driver allowances and parking fees</li>
-                </ul>
-            </div>
+            // Testimonial slider functionality
+            const testimonialCards = document.querySelectorAll('.testimonial-card');
+            const dots = document.querySelectorAll('.dot');
+            let currentTestimonial = 0;
+
+            function showTestimonial(index) {
+                testimonialCards.forEach(card => card.classList.remove('active'));
+                dots.forEach(dot => dot.classList.remove('active'));
+                
+                testimonialCards[index].classList.add('active');
+                dots[index].classList.add('active');
+                currentTestimonial = index;
+            }
+
+            document.querySelector('.testimonial-next').addEventListener('click', function() {
+                let next = currentTestimonial + 1;
+                if (next >= testimonialCards.length) next = 0;
+                showTestimonial(next);
+            });
+
+            document.querySelector('.testimonial-prev').addEventListener('click', function() {
+                let prev = currentTestimonial - 1;
+                if (prev < 0) prev = testimonialCards.length - 1;
+                showTestimonial(prev);
+            });
+
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => showTestimonial(index));
+            });
+
+            // Auto-rotate testimonials
+            setInterval(() => {
+                let next = currentTestimonial + 1;
+                if (next >= testimonialCards.length) next = 0;
+                showTestimonial(next);
+            }, 5000);
+
+            // Booking modal functionality
+            const modal = document.getElementById('bookingModal');
+            const modalClose = document.querySelector('.modal-close');
             
-            <div class="exclusions-box">
-                <h3><i class="fas fa-times-circle"></i> Exclusions</h3>
-                <ul class="exclusions-list">
-                    <li><i class="fas fa-times"></i> Entry fees to any attractions</li>
-                    <li><i class="fas fa-times"></i> Personal expenses (shopping, tips, etc.)</li>
-                    <li><i class="fas fa-times"></i> Any activities not mentioned</li>
-                    <li><i class="fas fa-times"></i> Anything not specifically mentioned in inclusions</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Gallery Section -->
-<section class="section">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">Dudhsagar & Spice Plantation Gallery</h2>
-            <p class="section-subtitle">A glimpse of what awaits you</p>
-        </div>
-        
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="../assets/destinations/goa/dudhsagar.webp" alt="Dudhsagar Waterfall" loading="lazy">
-                <div class="gallery-overlay">
-                    <span>Dudhsagar Waterfall</span>
-                </div>
-            </div>
-            
-            <div class="gallery-item">
-                <img src="../assets/destinations/goa/jeep-safari.webp" alt="Jeep Safari" loading="lazy">
-                <div class="gallery-overlay">
-                    <span>Jeep Safari</span>
-                </div>
-            </div>
-            
-            <div class="gallery-item">
-                <img src="../assets/destinations/goa/spice-demo.webp" alt="Spice Demonstration" loading="lazy">
-                <div class="gallery-overlay">
-                    <span>Spice Demonstration</span>
-                </div>
-            </div>
-            
-            <div class="gallery-item">
-                <img src="../assets/destinations/goa/goan-lunch.webp" alt="Goan Lunch" loading="lazy">
-                <div class="gallery-overlay">
-                    <span>Goan Lunch</span>
-                </div>
-            </div>
-            
-            <div class="gallery-item">
-                <img src="../assets/destinations/goa/spice-garden.webp" alt="Spice Garden" loading="lazy">
-                <div class="gallery-overlay">
-                    <span>Spice Garden</span>
-                </div>
-            </div>
-            
-            <div class="gallery-item">
-                <img src="../assets/destinations/goa/plantation-walk.webp" alt="Plantation Walk" loading="lazy">
-                <div class="gallery-overlay">
-                    <span>Plantation Walk</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Trip CTA Section -->
-<section class="trip-cta section" id="common-lead-form">
-    <div class="container">
-        <div class="cta-content">
-            <h2>Ready for Your Dudhsagar Adventure?</h2>
-            <p>Experience two of Goa's most spectacular attractions in one day. Book now!</p>
-            
-            <div class="cta-buttons">
-                <a href="../Upcoming-Trips.html?trip=Dudhsagar#common-lead-form" class="btn btn-primary book-now-btn">
-                    <i class="fas fa-ticket-alt"></i> Book This Tour
-                </a>
-                <a href="tel:+919067972295" class="btn btn-outline">
-                    <i class="fas fa-phone"></i> Call for Enquiry
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<!-- WhatsApp Floating Button -->
-<a href="https://wa.me/919067972295" class="whatsapp-float" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-</a>
-
-<!-- Back to Top -->
-<a href="#" class="back-to-top">
-    <i class="fas fa-arrow-up"></i>
-</a>
-
-<!-- Footer -->
-<footer class="footer">
-    <div class="container">
-        <div class="footer-grid">
-            <div class="footer-col footer-about">
-                <a href="../index.html" class="footer-logo">
-                    <img src="../assets/logo.webp" alt="Global Tourist Centre" loading="lazy">
-                </a>
-                <p>Crafting unforgettable travel experiences since 1997. Your trusted partner for bespoke journeys across India and beyond.</p>
-                <div class="footer-social">
-                    <a href="https://www.instagram.com/global__tourist" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/share/1H23K6UQPt/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://wa.me/919067972295" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                </div>
-            </div>
-
-            <div class="footer-col footer-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../Upcoming-Trips.html">Upcoming Trips</a></li>
-                    <li><a href="../Destinations.html">Destinations</a></li>
-                    <li><a href="../Flight-Bookings.html">Flight Bookings</a></li>
-                    <li><a href="../About-Us.html">About</a></li>
-                    <li><a href="../Services.html">Services</a></li>
-                    <li><a href="../Contact-Us.html">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col footer-services">
-                <h3>Our Services</h3>
-                <ul>
-                    <li><a href="../services.html#tours">Guided Tours</a></li>
-                    <li><a href="../Flight-Bookings.html">Flight Bookings</a></li>
-                    <li><a href="../services.html#hotels">Hotel Reservations</a></li>
-                    <li><a href="../services.html#visa">Visa Assistance</a></li>
-                    <li><a href="../services.html#exchange">Currency Exchange</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col footer-contact">
-                <h3>Contact Info</h3>
-                <ul>
-                    <li><i class="fas fa-map-marker-alt"></i> <a href="https://maps.app.goo.gl/EJd5EcqR5NNoydfb7">Benaulim, Goa 403716</a></li>
-                    <li><i class="fas fa-phone"></i> <a href="tel:+919067972295">+91 9067972295</a></li>
-                    <li><i class="fas fa-envelope"></i> <a href="mailto:globaltouristcentre@gmail.com">globaltouristcentre@gmail.com</a></li>
-                    <li><i class="fas fa-clock"></i> Mon-Sun: 10:00 AM - 9:00 PM</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <div class="footer-copyright">
-                <p>&copy; 2025 Global Tourist Centre. All rights reserved.</p>
-            </div>
-            <div class="footer-legal">
-                <a href="../TOS/Privacy-Policy.html">Privacy Policy</a>
-                <a href="../TOS/Terms-of-Service.html">Terms of Service</a>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<!-- Scripts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="../main.js"></script>
-<script>
-    // Initialize Google Translate
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement(
-            { 
-                pageLanguage: 'en',
-                includedLanguages: 'en,es,fr,de,it,ru,hi',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-            }, 
-            'languageDropdown'
-        );
-    }
-    
-</script>
+            if (modal && modalClose) {
+                modalClose.addEventListener('click', function() {
+                    modal.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                });
+                
+                window.addEventListener('click', function(event) {
+                    if (event.target === modal) {
+                        modal.classList.remove('active');
+                        document.body.style.overflow = 'auto';
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>

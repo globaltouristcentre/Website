@@ -10,7 +10,7 @@
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Tourist Centre | Premium Travel Experiences</title>
+    <title>Global Tourist Centre | Aurangabad Heritage Tour</title>
     <meta name="description" content="Crafting unforgettable journeys since 1997. Your trusted travel partner for bespoke domestic and international tours.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,7 +56,7 @@
     <!-- Web Manifest (PWA) -->
     <link rel="manifest" href="../assets/favicon/site.webmanifest" />
     <meta name="apple-mobile-web-app-title" content="GlobalTouristCentre" />    
-    </head>
+</head>
 
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -119,7 +119,7 @@
                 </button>
                 <div class="language-selector">
                     <div class="language-toggle" id="languageToggleMobile">
-                        <img src="../assets/icons/translate.png" alt="Language Selector">
+                        <img src="../assets/icons/translate.webp" alt="Language Selector">
                     </div>
                     <div class="language-dropdown mobile-dropdown" id="languageDropdownMobile"></div>
                 </div>
@@ -167,9 +167,9 @@
               </div>
             </div>    
                 <div class="hero-buttons">
-                    <a href="../Upcoming-Trips.html?trip=Aurangabad#common-lead-form" class="btn btn-primary book-now-btn">
-                    <i class="fas fa-ticket-alt"></i> Book This Tour
-                    </a>
+                    <button class="btn btn-primary book-now-btn" onclick="document.getElementById('bookingModal').classList.add('active'); document.body.style.overflow = 'hidden';">
+                        <i class="fas fa-ticket-alt"></i> Book This Tour
+                    </button>
                     <a href="#itinerary" class="btn btn-outline">
                         <i class="fas fa-list-ul"></i> View Itinerary
                     </a>
@@ -182,8 +182,8 @@
     <section class="trip-features section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Tour Highlights</h2>
-                <p class="section-subtitle">What makes this Aurangabad tour special</p>
+                <h2 class="section-title">Why Choose This Tour</h2>
+                <p class="section-subtitle">Experience the best of Aurangabad with these exclusive highlights</p>
             </div>
             
             <div class="features-grid">
@@ -223,81 +223,187 @@
     </section>
 
     <!-- Itinerary Section -->
-    <section class="section" id="itinerary">
+    <section class="itinerary-section" id="itinerary">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Detailed Itinerary</h2>
+                <h2 class="section-title">Tour Itinerary</h2>
                 <p class="section-subtitle">Day-by-day breakdown of your Aurangabad experience</p>
             </div>
             
-            <div class="itinerary-timeline">
+            <div class="itinerary-container">
                 <!-- Day 1 -->
-                <div class="timeline-item">
-                    <div class="timeline-day">1</div>
-                    <div class="timeline-content">
-                        <h3>Mumbai to Aurangabad</h3>
-                        <p>Depart from Mumbai to Aurangabad via car.</p>
-                        <ul class="trip-inclusions">
-                            <li><i class="fas fa-road"></i> Scenic drive to Aurangabad</li>
-                            <li><i class="fas fa-hotel"></i> Arrive in Aurangabad and check in to hotel</li>
-                            <li><i class="fas fa-utensils"></i> Relax and have lunch</li>
-                            <li><i class="fas fa-landmark"></i> Visit Bibi Ka Maqbara - stunning Mughal-era monument</li>
-                            <li><i class="fas fa-water"></i> Explore Panchakki - historical water mill</li>
-                        </ul>
-                        <p>Overnight stay in Aurangabad.</p>
+                <div class="itinerary-day">
+                    <div class="day-number">1</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Mumbai to Aurangabad</h3>
+                        <p class="day-description">Depart from Mumbai to Aurangabad via car.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-road"></i>
+                                </div>
+                                <div class="highlight-text">Scenic drive to Aurangabad</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-hotel"></i>
+                                </div>
+                                <div class="highlight-text">Arrive in Aurangabad and check in to hotel</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <div class="highlight-text">Relax and have lunch</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-landmark"></i>
+                                </div>
+                                <div class="highlight-text">Visit Bibi Ka Maqbara - stunning Mughal-era monument</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-water"></i>
+                                </div>
+                                <div class="highlight-text">Explore Panchakki - historical water mill</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- Day 2 -->
-                <div class="timeline-item">
-                    <div class="timeline-day">2</div>
-                    <div class="timeline-content">
-                        <h3>Ajanta Caves Excursion</h3>
-                        <p>Full day excursion to the magnificent Ajanta Caves.</p>
-                        <ul class="trip-inclusions">
-                            <li><i class="fas fa-utensils"></i> Early breakfast at hotel</li>
-                            <li><i class="fas fa-road"></i> Depart for Ajanta Caves (approx. 2-hour drive)</li>
-                            <li><i class="fas fa-mountain"></i> Explore 30 rock-cut Buddhist caves with intricate frescoes</li>
-                            <li><i class="fas fa-utensils"></i> Lunch at nearby restaurant</li>
-                            <li><i class="fas fa-road"></i> Return to Aurangabad for rest</li>
-                        </ul>
-                        <p>Overnight stay in Aurangabad.</p>
+                <div class="itinerary-day">
+                    <div class="day-number">2</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Ajanta Caves Excursion</h3>
+                        <p class="day-description">Full day excursion to the magnificent Ajanta Caves.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <div class="highlight-text">Early breakfast at hotel</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-road"></i>
+                                </div>
+                                <div class="highlight-text">Depart for Ajanta Caves (approx. 2-hour drive)</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-mountain"></i>
+                                </div>
+                                <div class="highlight-text">Explore 30 rock-cut Buddhist caves with intricate frescoes</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <div class="highlight-text">Lunch at nearby restaurant</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-road"></i>
+                                </div>
+                                <div class="highlight-text">Return to Aurangabad for rest</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- Day 3 -->
-                <div class="timeline-item">
-                    <div class="timeline-day">3</div>
-                    <div class="timeline-content">
-                        <h3>Ellora Caves & Aurangabad Sightseeing</h3>
-                        <p>Explore the wonders of Ellora Caves and more.</p>
-                        <ul class="trip-inclusions">
-                            <li><i class="fas fa-utensils"></i> Breakfast at hotel</li>
-                            <li><i class="fas fa-road"></i> Visit Ellora Caves (UNESCO World Heritage Site, 40-min drive)</li>
-                            <li><i class="fas fa-temple"></i> Explore Kailasa Temple (Cave 16) - marvel of architecture</li>
-                            <li><i class="fas fa-fort-awesome"></i> Visit Daulatabad Fort (Devagiri Fort) for panoramic views</li>
-                            <li><i class="fas fa-shopping-bag"></i> Evening free for local markets or Hyderabadi cuisine</li>
-                        </ul>
-                        <p>Overnight stay in Aurangabad.</p>
+                <div class="itinerary-day">
+                    <div class="day-number">3</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Ellora Caves & Aurangabad Sightseeing</h3>
+                        <p class="day-description">Explore the wonders of Ellora Caves and more.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <div class="highlight-text">Breakfast at hotel</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-road"></i>
+                                </div>
+                                <div class="highlight-text">Visit Ellora Caves (UNESCO World Heritage Site, 40-min drive)</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-temple"></i>
+                                </div>
+                                <div class="highlight-text">Explore Kailasa Temple (Cave 16) - marvel of architecture</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-fort-awesome"></i>
+                                </div>
+                                <div class="highlight-text">Visit Daulatabad Fort (Devagiri Fort) for panoramic views</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-shopping-bag"></i>
+                                </div>
+                                <div class="highlight-text">Evening free for local markets or Hyderabadi cuisine</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- Day 4 -->
-                <div class="timeline-item">
-                    <div class="timeline-day">4</div>
-                    <div class="timeline-content">
-                        <h3>Aurangabad to Mumbai</h3>
-                        <p>Check out and return to Mumbai with sightseeing en route.</p>
-                        <ul class="trip-inclusions">
-                            <li><i class="fas fa-utensils"></i> Breakfast at hotel</li>
-                            <li><i class="fas fa-mountain"></i> Visit Aurangabad Caves - 12 Buddhist caves with carvings</li>
-                            <li><i class="fas fa-utensils"></i> Relaxed lunch</li>
-                            <li><i class="fas fa-road"></i> Proceed to Mumbai with sightseeing en route:</li>
-                            <li><i class="fas fa-monument"></i> Gateway of India</li>
-                            <li><i class="fas fa-hotel"></i> Taj Hotel</li>
-                            <li><i class="fas fa-water"></i> Marine Drive</li>
-                        </ul>
-                        <p>Tour concludes with wonderful historical memories!</p>
+                <div class="itinerary-day">
+                    <div class="day-number">4</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Aurangabad to Mumbai</h3>
+                        <p class="day-description">Check out and return to Mumbai with sightseeing en route.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <div class="highlight-text">Breakfast at hotel</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-mountain"></i>
+                                </div>
+                                <div class="highlight-text">Visit Aurangabad Caves - 12 Buddhist caves with carvings</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <div class="highlight-text">Relaxed lunch</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-road"></i>
+                                </div>
+                                <div class="highlight-text">Proceed to Mumbai with sightseeing en route</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-monument"></i>
+                                </div>
+                                <div class="highlight-text">Gateway of India</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-hotel"></i>
+                                </div>
+                                <div class="highlight-text">Taj Hotel</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-water"></i>
+                                </div>
+                                <div class="highlight-text">Marine Drive</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -310,9 +416,12 @@
             <div class="section-header">
                 <h2 class="section-title">Tour Details</h2>
                 <p class="section-subtitle">What's included and what's not</p>
+                <button class="btn btn-outline toggle-details" id="toggleDetails">
+                    <i class="fas fa-chevron-down"></i> Show Details
+                </button>
             </div>
             
-            <div class="inclusions-container">
+            <div class="inclusions-container" id="detailsContainer" style="display: none;">
                 <div class="inclusions-box">
                     <h3><i class="fas fa-check-circle"></i> Inclusions</h3>
                     <ul class="inclusions-list">
@@ -338,14 +447,17 @@
     </section>
 
     <!-- Gallery Section -->
-     <section class="section">
+    <section class="section">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Aurangabad Gallery</h2>
                 <p class="section-subtitle">A glimpse of what awaits you</p>
+                <button class="btn btn-outline toggle-gallery" id="toggleGallery">
+                    <i class="fas fa-chevron-down"></i> Show Gallery
+                </button>
             </div>
             
-            <div class="gallery-grid">
+            <div class="gallery-grid" id="galleryContainer" style="display: none;">
                 <div class="gallery-item">
                     <img src="../assets/destinations/aurangabad/ajanta-caves.webp" alt="Ajanta Caves" loading="lazy">
                     <div class="gallery-overlay">
@@ -391,17 +503,99 @@
         </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Traveler Reviews</h2>
+                <p class="section-subtitle">What our guests say about this tour</p>
+                <button class="btn btn-outline toggle-testimonials" id="toggleTestimonials">
+                    <i class="fas fa-chevron-down"></i> Show Reviews
+                </button>
+            </div>
+            
+            <div class="testimonials-slider" id="testimonialsContainer" style="display: none;">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">The Ajanta and Ellora caves were absolutely breathtaking! Our guide was extremely knowledgeable and made the history come alive. The hotels were comfortable and the itinerary was perfectly paced.</p>
+                        <div class="client-info">
+                            <div class="client-details">
+                                <h4>Rahul S.</h4>
+                                <p>Traveled March 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">The Kailasa Temple at Ellora is an architectural marvel that exceeded all expectations. The tour was well-organized with comfortable transportation and excellent accommodations.</p>
+                        <div class="client-info">
+                            <div class="client-details">
+                                <h4>Priya M.</h4>
+                                <p>Traveled February 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">The Bibi Ka Maqbara was stunning, especially at sunset. The tour gave us just the right amount of time at each site. Would have loved one more day to explore Aurangabad's markets.</p>
+                        <div class="client-info">
+                            <div class="client-details">
+                                <h4>Ananya S.</h4>
+                                <p>Traveled January 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonials-nav">
+                    <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Trip CTA Section -->
-    <section class="trip-cta section" id="common-lead-form">
+    <section class="trip-cta section">
         <div class="container">
             <div class="cta-content">
                 <h2>Ready for Your Historical Adventure?</h2>
                 <p>Explore the depths of Aurangabad. Book now to secure your spot!</p>
                 
                 <div class="cta-buttons">
-                    <a href="../Upcoming-Trips.html?trip=Aurangabad#common-lead-form" class="btn btn-primary book-now-btn">
-                    <i class="fas fa-ticket-alt"></i> Book This Tour
-                    </a>
+                    <button class="btn btn-primary book-now-btn" onclick="document.getElementById('bookingModal').classList.add('active'); document.body.style.overflow = 'hidden';">
+                        <i class="fas fa-ticket-alt"></i> Book This Tour
+                    </button>
                     <a href="tel:+919067972295" class="btn btn-outline">
                         <i class="fas fa-phone"></i> Call for Enquiry
                     </a>
@@ -409,6 +603,50 @@
             </div>
         </div>
     </section>
+
+    <!-- Booking Modal -->
+<div class="modal" id="bookingModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>Book Aurangabad Heritage Tour</h3>
+            <button type="button" class="modal-close">&times;</button>
+        </div>
+        <div class="modal-body">
+            <form id="bookingForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="bookingName">Full Name*</label>
+                        <input type="text" id="bookingName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookingPhone">WhatsApp Number*</label>
+                        <input type="tel" id="bookingPhone" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="bookingCount">Number of Travelers*</label>
+                    <select id="bookingCount" required>
+                        <option value="">Select</option>
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3-5">3-5 People</option>
+                        <option value="6+">6+ People</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="bookingMessage">Special Requirements (Optional)</label>
+                    <textarea id="bookingMessage" rows="3"></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">
+                    <i class="fab fa-whatsapp"></i> Book via WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
 
 <!-- WhatsApp Floating Button -->
 <a href="https://wa.me/919067972295" class="whatsapp-float" target="_blank">
@@ -500,6 +738,62 @@
         );
     }
     
+    // Collapsible sections functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        // Toggle details section
+        const toggleDetails = document.getElementById('toggleDetails');
+        const detailsContainer = document.getElementById('detailsContainer');
+        if (toggleDetails && detailsContainer) {
+            toggleDetails.addEventListener('click', function() {
+                const isHidden = detailsContainer.style.display === 'none';
+                detailsContainer.style.display = isHidden ? 'block' : 'none';
+                this.innerHTML = isHidden ? 
+                    '<i class="fas fa-chevron-up"></i> Hide Details' : 
+                    '<i class="fas fa-chevron-down"></i> Show Details';
+            });
+        }
+        
+        // Toggle gallery section
+        const toggleGallery = document.getElementById('toggleGallery');
+        const galleryContainer = document.getElementById('galleryContainer');
+        if (toggleGallery && galleryContainer) {
+            toggleGallery.addEventListener('click', function() {
+                const isHidden = galleryContainer.style.display === 'none';
+                galleryContainer.style.display = isHidden ? 'grid' : 'none';
+                this.innerHTML = isHidden ? 
+                    '<i class="fas fa-chevron-up"></i> Hide Gallery' : 
+                    '<i class="fas fa-chevron-down"></i> Show Gallery';
+            });
+        }
+        
+        // Toggle testimonials section
+        const toggleTestimonials = document.getElementById('toggleTestimonials');
+        const testimonialsContainer = document.getElementById('testimonialsContainer');
+        if (toggleTestimonials && testimonialsContainer) {
+            toggleTestimonials.addEventListener('click', function() {
+                const isHidden = testimonialsContainer.style.display === 'none';
+                testimonialsContainer.style.display = isHidden ? 'block' : 'none';
+                this.innerHTML = isHidden ? 
+                    '<i class="fas fa-chevron-up"></i> Hide Reviews' : 
+                    '<i class="fas fa-chevron-down"></i> Show Reviews';
+            });
+        }
+    });
+
+     // Initialize components when DOM is loaded
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize booking modal
+        if (typeof initBookingModal === 'function') {
+            initBookingModal();
+            console.log('Booking modal initialized');
+        } else {
+            console.error('initBookingModal function not found');
+        }
+
+        // Initialize other components as needed
+        initMobileMenu();
+        initBackToTop();
+    });
 </script>
 </body>
 </html>

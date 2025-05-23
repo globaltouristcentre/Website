@@ -10,7 +10,7 @@
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Tourist Centre | Premium Travel Experiences</title>
+    <title>Global Tourist Centre | Netravali Day Trip</title>
     <meta name="description" content="Crafting unforgettable journeys since 1997. Your trusted travel partner for bespoke domestic and international tours.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,7 +56,7 @@
     <!-- Web Manifest (PWA) -->
     <link rel="manifest" href="../assets/favicon/site.webmanifest" />
     <meta name="apple-mobile-web-app-title" content="GlobalTouristCentre" />    
-    </head>
+</head>
 
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -166,11 +166,10 @@
                         <span>Nature Trek</span>
                     </div>
                 </div>
-                
                 <div class="hero-buttons">
-                    <a href="../Upcoming-Trips.html?trip=Netravali#common-lead-form" class="btn btn-primary book-now-btn">
-                    <i class="fas fa-ticket-alt"></i> Book This Tour
-                    </a>
+                    <button class="btn btn-primary book-now-btn" onclick="document.getElementById('bookingModal').classList.add('active'); document.body.style.overflow = 'hidden';">
+                        <i class="fas fa-ticket-alt"></i> Book This Tour
+                    </button>
                     <a href="#itinerary" class="btn btn-outline">
                         <i class="fas fa-list-ul"></i> View Itinerary
                     </a>
@@ -183,8 +182,8 @@
     <section class="trip-features section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Trip Highlights</h2>
-                <p class="section-subtitle">What makes this nature trip special</p>
+                <h2 class="section-title">Why Choose This Tour</h2>
+                <p class="section-subtitle">Experience the best of Goa's nature with these exclusive highlights</p>
             </div>
             
             <div class="features-grid">
@@ -224,119 +223,195 @@
     </section>
 
     <!-- Itinerary Section -->
-    <section class="section" id="itinerary">
+    <section class="itinerary-section" id="itinerary">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Detailed Itinerary</h2>
+                <h2 class="section-title">Tour Itinerary</h2>
                 <p class="section-subtitle">Hour-by-hour breakdown of your nature adventure</p>
             </div>
             
-            <div class="itinerary-timeline">
+            <div class="itinerary-container">
                 <!-- 7:00 AM -->
-                <div class="timeline-item">
-                    <div class="timeline-day">07:00 AM</div>
-                    <div class="timeline-content">
-                        <h3>Departure from Your Location</h3>
-                        <p>Begin your journey early to maximize the day. Our representative will pick you up from your hotel or designated meeting point in South Goa.</p>
-                        <ul class="trip-inclusions">
-                            <li><i class="fas fa-car"></i> Comfortable AC vehicle transfer</li>
-                            <li><i class="fas fa-suitcase"></i> Pack water, snacks, comfortable shoes</li>
-                        </ul>
+                <div class="itinerary-day">
+                    <div class="day-number">07:00 AM</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Departure from Your Location</h3>
+                        <p class="day-description">Begin your journey early to maximize the day.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-car"></i>
+                                </div>
+                                <div class="highlight-text">Comfortable AC vehicle transfer</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-suitcase"></i>
+                                </div>
+                                <div class="highlight-text">Pack water, snacks, comfortable shoes</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- 9:00 AM -->
-                <div class="timeline-item">
-                    <div class="timeline-day">09:00 AM</div>
-                    <div class="timeline-content">
-                        <h3>Arrival at Netravali Wildlife Sanctuary</h3>
-                        <p>Explore the sanctuary famous for its rich biodiversity. Spot rare birds, butterflies, and plant species.</p>
-                        <ul class="trip-inclusions">
-                            <li><i class="fas fa-binoculars"></i> Optional local guide (additional cost)</li>
-                            <li><i class="fas fa-camera"></i> Photography opportunities</li>
-                        </ul>
+                <div class="itinerary-day">
+                    <div class="day-number">09:00 AM</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Arrival at Netravali Wildlife Sanctuary</h3>
+                        <p class="day-description">Explore the sanctuary famous for its rich biodiversity.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-binoculars"></i>
+                                </div>
+                                <div class="highlight-text">Optional local guide (additional cost)</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-camera"></i>
+                                </div>
+                                <div class="highlight-text">Photography opportunities</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- 10:30 AM -->
-                <div class="timeline-item">
-                    <div class="timeline-day">10:30 AM</div>
-                    <div class="timeline-content">
-                        <h3>Visit to Bubbling Lake (Budbudyanchi Tail)</h3>
-                        <p>Witness the fascinating phenomenon where bubbles emerge from the lake's surface when you clap or make noise.</p>
-                        <ul class="trip-inclusions">
-                            <li><i class="fas fa-water"></i> Unique natural phenomenon</li>
-                            <li><i class="fas fa-clock"></i> Duration: 30 minutes to 1 hour</li>
-                            <li><i class="fas fa-landmark"></i> Nearby Gopinath Temple visit</li>
-                        </ul>
+                <div class="itinerary-day">
+                    <div class="day-number">10:30 AM</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Visit to Bubbling Lake (Budbudyanchi Tail)</h3>
+                        <p class="day-description">Witness the fascinating phenomenon where bubbles emerge from the lake's surface.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-water"></i>
+                                </div>
+                                <div class="highlight-text">Unique natural phenomenon</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-landmark"></i>
+                                </div>
+                                <div class="highlight-text">Nearby Gopinath Temple visit</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- 11:30 AM -->
-                <div class="timeline-item">
-                    <div class="timeline-day">11:30 AM</div>
-                    <div class="timeline-content">
-                        <h3>Trek to Netravali Waterfalls</h3>
-                        <p>Embark on an easy-to-moderate trek through dense forests and rocky trails to reach the pristine waterfalls.</p>
-                        <ul class="trip-inclusions">
-                            <li><i class="fas fa-hiking"></i> Scenic forest trek</li>
-                            <li><i class="fas fa-swimming-pool"></i> Refreshing dip in the falls (weather permitting)</li>
-                            <li><i class="fas fa-clock"></i> Duration: 2-3 hours total</li>
-                        </ul>
+                <div class="itinerary-day">
+                    <div class="day-number">11:30 AM</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Trek to Netravali Waterfalls</h3>
+                        <p class="day-description">Embark on an easy-to-moderate trek through dense forests.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-hiking"></i>
+                                </div>
+                                <div class="highlight-text">Scenic forest trek</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-swimming-pool"></i>
+                                </div>
+                                <div class="highlight-text">Refreshing dip in the falls (weather permitting)</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- 2:00 PM -->
-                <div class="timeline-item">
-                    <div class="timeline-day">02:00 PM</div>
-                    <div class="timeline-content">
-                        <h3>Lunch Break</h3>
-                        <p>Enjoy a delicious Goan meal at a local restaurant or homestay.</p>
-                        <ul class="trip-inclusions">
-                            <li><i class="fas fa-utensils"></i> Traditional Goan dishes available</li>
-                            <li><i class="fas fa-fish"></i> Fish curry rice or vegetarian options</li>
-                            <li><i class="fas fa-ice-cream"></i> Local desserts</li>
-                        </ul>
+                <div class="itinerary-day">
+                    <div class="day-number">02:00 PM</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Lunch Break</h3>
+                        <p class="day-description">Enjoy a delicious Goan meal at a local restaurant or homestay.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <div class="highlight-text">Traditional Goan dishes available</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-fish"></i>
+                                </div>
+                                <div class="highlight-text">Fish curry rice or vegetarian options</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- 3:30 PM -->
-                <div class="timeline-item">
-                    <div class="timeline-day">03:30 PM</div>
-                    <div class="timeline-content">
-                        <h3>Explore Netravali's Scenic Villages</h3>
-                        <p>Drive through charming villages with lush greenery, paddy fields, and traditional Goan houses.</p>
-                        <ul class="trip-inclusions">
-                            <li><i class="fas fa-home"></i> Traditional Goan architecture</li>
-                            <li><i class="fas fa-users"></i> Optional interaction with locals</li>
-                        </ul>
+                <div class="itinerary-day">
+                    <div class="day-number">03:30 PM</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Explore Netravali's Scenic Villages</h3>
+                        <p class="day-description">Drive through charming villages with lush greenery.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <div class="highlight-text">Traditional Goan architecture</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="highlight-text">Optional interaction with locals</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- 4:30 PM -->
-                <div class="timeline-item">
-                    <div class="timeline-day">04:30 PM</div>
-                    <div class="timeline-content">
-                        <h3>Visit a Spice Plantation (Optional)</h3>
-                        <p>Learn about spice cultivation like pepper, cardamom, and vanilla with a guided plantation tour.</p>
-                        <ul class="trip-inclusions">
-                            <li><i class="fas fa-leaf"></i> Spice demonstration</li>
-                            <li><i class="fas fa-shopping-bag"></i> Option to purchase fresh spices</li>
-                            <li><i class="fas fa-info-circle"></i> Additional cost applies</li>
-                        </ul>
+                <div class="itinerary-day">
+                    <div class="day-number">04:30 PM</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Visit a Spice Plantation (Optional)</h3>
+                        <p class="day-description">Learn about spice cultivation like pepper, cardamom, and vanilla.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <div class="highlight-text">Spice demonstration</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-info-circle"></i>
+                                </div>
+                                <div class="highlight-text">Additional cost applies</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- 5:30 PM -->
-                <div class="timeline-item">
-                    <div class="timeline-day">05:30 PM</div>
-                    <div class="timeline-content">
-                        <h3>Return Journey</h3>
-                        <p>Begin your return journey, enjoying the scenic drive through Goa's countryside.</p>
-                        <ul class="trip-inclusions">
-                            <li><i class="fas fa-car"></i> Comfortable return transfer</li>
-                            <li><i class="fas fa-clock"></i> Estimated arrival back by 7:30 PM</li>
-                        </ul>
+                <div class="itinerary-day">
+                    <div class="day-number">05:30 PM</div>
+                    <div class="day-content">
+                        <h3 class="day-title">Return Journey</h3>
+                        <p class="day-description">Begin your return journey, enjoying the scenic drive through Goa's countryside.</p>
+                        <div class="day-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-car"></i>
+                                </div>
+                                <div class="highlight-text">Comfortable return transfer</div>
+                            </div>
+                            <div class="highlight-card">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="highlight-text">Estimated arrival back by 7:30 PM</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -347,11 +422,14 @@
     <section class="section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Trip Details</h2>
+                <h2 class="section-title">Tour Details</h2>
                 <p class="section-subtitle">What's included and what's not</p>
+                <button class="btn btn-outline toggle-details" id="toggleDetails">
+                    <i class="fas fa-chevron-down"></i> Show Details
+                </button>
             </div>
             
-            <div class="inclusions-container">
+            <div class="inclusions-container" id="detailsContainer" style="display: none;">
                 <div class="inclusions-box">
                     <h3><i class="fas fa-check-circle"></i> Inclusions</h3>
                     <ul class="inclusions-list">
@@ -382,9 +460,12 @@
             <div class="section-header">
                 <h2 class="section-title">Netravali Gallery</h2>
                 <p class="section-subtitle">A glimpse of what awaits you</p>
+                <button class="btn btn-outline toggle-gallery" id="toggleGallery">
+                    <i class="fas fa-chevron-down"></i> Show Gallery
+                </button>
             </div>
             
-            <div class="gallery-grid">
+            <div class="gallery-grid" id="galleryContainer" style="display: none;">
                 <div class="gallery-item">
                     <img src="../assets/destinations/goa/bubbling-lake.webp" alt="Bubbling Lake" loading="lazy">
                     <div class="gallery-overlay">
@@ -430,17 +511,99 @@
         </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Traveler Reviews</h2>
+                <p class="section-subtitle">What our guests say about this tour</p>
+                <button class="btn btn-outline toggle-testimonials" id="toggleTestimonials">
+                    <i class="fas fa-chevron-down"></i> Show Reviews
+                </button>
+            </div>
+            
+            <div class="testimonials-slider" id="testimonialsContainer" style="display: none;">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">The bubbling lake was absolutely fascinating! Our guide was knowledgeable and made the experience even more special. The waterfall trek was moderate but so rewarding with the beautiful views.</p>
+                        <div class="client-info">
+                            <div class="client-details">
+                                <h4>Priya M.</h4>
+                                <p>Traveled June 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">Perfect day trip from South Goa! We loved the mix of nature, culture, and adventure. The optional spice plantation visit was worth the extra cost - learned so much about local agriculture.</p>
+                        <div class="client-info">
+                            <div class="client-details">
+                                <h4>Raj K.</h4>
+                                <p>Traveled May 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">Great way to see a different side of Goa beyond beaches. The trek was well-paced and the waterfall was refreshing. Only suggestion would be to include lunch in the package.</p>
+                        <div class="client-info">
+                            <div class="client-details">
+                                <h4>Ananya S.</h4>
+                                <p>Traveled April 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonials-nav">
+                    <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Trip CTA Section -->
-    <section class="trip-cta section" id="common-lead-form">
+    <section class="trip-cta section">
         <div class="container">
             <div class="cta-content">
                 <h2>Ready for Your Nature Adventure?</h2>
                 <p>Discover Goa's hidden natural wonders. Book your Netravali Day Trip now!</p>
                 
                 <div class="cta-buttons">
-                    <a href="../Upcoming-Trips.html?trip=Netravali#common-lead-form" class="btn btn-primary book-now-btn">
-                    <i class="fas fa-ticket-alt"></i> Book This Tour
-                    </a>
+                    <button class="btn btn-primary book-now-btn" onclick="document.getElementById('bookingModal').classList.add('active'); document.body.style.overflow = 'hidden';">
+                        <i class="fas fa-ticket-alt"></i> Book This Tour
+                    </button>
                     <a href="tel:+919067972295" class="btn btn-outline">
                         <i class="fas fa-phone"></i> Call for Enquiry
                     </a>
@@ -448,6 +611,50 @@
             </div>
         </div>
     </section>
+
+    <!-- Booking Modal -->
+<div class="modal" id="bookingModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>Book Netravali Day Trip</h3>
+            <button type="button" class="modal-close">&times;</button>
+        </div>
+        <div class="modal-body">
+            <form id="bookingForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="bookingName">Full Name*</label>
+                        <input type="text" id="bookingName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookingPhone">WhatsApp Number*</label>
+                        <input type="tel" id="bookingPhone" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="bookingCount">Number of Travelers*</label>
+                    <select id="bookingCount" required>
+                        <option value="">Select</option>
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3-5">3-5 People</option>
+                        <option value="6+">6+ People</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="bookingMessage">Special Requirements (Optional)</label>
+                    <textarea id="bookingMessage" rows="3"></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">
+                    <i class="fab fa-whatsapp"></i> Book via WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
 
 <!-- WhatsApp Floating Button -->
 <a href="https://wa.me/919067972295" class="whatsapp-float" target="_blank">
@@ -539,6 +746,95 @@
         );
     }
     
+    // Collapsible sections functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        // Toggle itinerary days
+        const dayButtons = document.querySelectorAll('.toggle-day-btn');
+        dayButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const details = this.closest('.timeline-header').nextElementSibling;
+                details.style.display = details.style.display === 'none' ? 'block' : 'none';
+                this.innerHTML = details.style.display === 'none' ? 
+                    '<i class="fas fa-chevron-down"></i>' : '<i class="fas fa-chevron-up"></i>';
+            });
+        });
+        
+        // Toggle all itinerary days
+        const toggleItinerary = document.getElementById('toggleItinerary');
+        if (toggleItinerary) {
+            toggleItinerary.addEventListener('click', function() {
+                const allDetails = document.querySelectorAll('.timeline-details');
+                const isCollapsed = allDetails[0].style.display === 'none';
+                
+                allDetails.forEach(details => {
+                    details.style.display = isCollapsed ? 'block' : 'none';
+                });
+                
+                document.querySelectorAll('.toggle-day-btn').forEach(btn => {
+                    btn.innerHTML = isCollapsed ? 
+                        '<i class="fas fa-chevron-up"></i>' : '<i class="fas fa-chevron-down"></i>';
+                });
+                
+                this.innerHTML = isCollapsed ? 
+                    '<i class="fas fa-compress-alt"></i> Collapse All Days' : 
+                    '<i class="fas fa-expand-alt"></i> Expand All Days';
+            });
+        }
+        
+        // Toggle details section
+        const toggleDetails = document.getElementById('toggleDetails');
+        const detailsContainer = document.getElementById('detailsContainer');
+        if (toggleDetails && detailsContainer) {
+            toggleDetails.addEventListener('click', function() {
+                const isHidden = detailsContainer.style.display === 'none';
+                detailsContainer.style.display = isHidden ? 'block' : 'none';
+                this.innerHTML = isHidden ? 
+                    '<i class="fas fa-chevron-up"></i> Hide Details' : 
+                    '<i class="fas fa-chevron-down"></i> Show Details';
+            });
+        }
+        
+        // Toggle gallery section
+        const toggleGallery = document.getElementById('toggleGallery');
+        const galleryContainer = document.getElementById('galleryContainer');
+        if (toggleGallery && galleryContainer) {
+            toggleGallery.addEventListener('click', function() {
+                const isHidden = galleryContainer.style.display === 'none';
+                galleryContainer.style.display = isHidden ? 'grid' : 'none';
+                this.innerHTML = isHidden ? 
+                    '<i class="fas fa-chevron-up"></i> Hide Gallery' : 
+                    '<i class="fas fa-chevron-down"></i> Show Gallery';
+            });
+        }
+        
+        // Toggle testimonials section
+        const toggleTestimonials = document.getElementById('toggleTestimonials');
+        const testimonialsContainer = document.getElementById('testimonialsContainer');
+        if (toggleTestimonials && testimonialsContainer) {
+            toggleTestimonials.addEventListener('click', function() {
+                const isHidden = testimonialsContainer.style.display === 'none';
+                testimonialsContainer.style.display = isHidden ? 'block' : 'none';
+                this.innerHTML = isHidden ? 
+                    '<i class="fas fa-chevron-up"></i> Hide Reviews' : 
+                    '<i class="fas fa-chevron-down"></i> Show Reviews';
+            });
+        }
+    });
+
+     // Initialize components when DOM is loaded
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize booking modal
+        if (typeof initBookingModal === 'function') {
+            initBookingModal();
+            console.log('Booking modal initialized');
+        } else {
+            console.error('initBookingModal function not found');
+        }
+
+        // Initialize other components as needed
+        initMobileMenu();
+        initBackToTop();
+    });
 </script>
 </body>
 </html>
