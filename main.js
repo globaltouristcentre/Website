@@ -1001,3 +1001,11 @@ Please provide availability and payment details. Thank you!`;
         }
     });
 }
+
+// Remove .html extension from the URL
+if (window.location.pathname.endsWith('.html')) {
+  const cleanUrl = window.location.pathname
+    .replace(/\.html$/, '')  // Remove .html
+    .replace(/\/$/, '');     // Optional: Remove trailing slash
+  window.history.replaceState({}, '', cleanUrl);
+}
