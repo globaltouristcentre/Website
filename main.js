@@ -937,7 +937,23 @@ function initBookingModal() {
         return document.title.replace('Global Tourist Centre |', '').trim();
     };
 
-    // Close modal handlers (keep your existing code)
+    // Close modal when clicking the close button
+    const closeButton = bookingModal.querySelector('.modal-close');
+    if (closeButton) {
+        closeButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            bookingModal.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    }
+
+    // Close modal when clicking outside the modal content
+    bookingModal.addEventListener('click', function(e) {
+        if (e.target === bookingModal) {
+            bookingModal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
 
     bookingForm.addEventListener('submit', function(e) {
         e.preventDefault();

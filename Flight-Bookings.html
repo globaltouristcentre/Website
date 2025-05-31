@@ -43,6 +43,23 @@
     src="https://www.facebook.com/tr?id=733889692300840&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
+    <!-- Event snippet for Page view conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+    function gtag_report_conversion(url) {
+    var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+    };
+    gtag('event', 'conversion', {
+      'send_to': 'AW-17126691217/hKRNCPyhjdAaEJGj0uY_',
+      'value': 1.0,
+      'currency': 'INR',
+      'event_callback': callback
+    });
+    return false;
+    }
+    </script>
     <!-- Fixed JSON-LD (removed extra quote after "json") -->
     <script type="application/ld+json">
     {
@@ -141,7 +158,7 @@
                 <li><a href="Contact-Us.html" class="nav-link">Contact</a></li>
             </ul>
             <div class="social-links">
-                <a href="https://www.instagram.com/global__tourist" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/globaltouristcentre/" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a href="https://www.facebook.com/share/1H23K6UQPt/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://wa.me/919067972295" target="_blank"><i class="fab fa-whatsapp"></i></a>
             </div>
@@ -785,7 +802,7 @@
                 </a>
                 <p>Crafting unforgettable travel experiences since 1997. Your trusted partner for bespoke journeys across India and beyond.</p>
                 <div class="footer-social">
-                    <a href="https://www.instagram.com/global__tourist" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/globaltouristcentre/" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="https://www.facebook.com/share/1H23K6UQPt/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://wa.me/919067972295" target="_blank"><i class="fab fa-whatsapp"></i></a>
                 </div>
