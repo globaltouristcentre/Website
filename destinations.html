@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/responsive.css">
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <meta name="apple-mobile-web-app-title" content="GlobalTouristCentre" />
 </head>
 <body>
     <header class="hero-section" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/hero/Destinations-hero-bg.webp');">
@@ -46,6 +52,7 @@
         </div>
 
         <div class="upcoming-trips-grid">
+
         <!-- Coimbatore - Ooty - Coonoor Trip -->
     <div class="upcoming-trip-card" data-trip-id="coimbatore-ooty-coonoor">
     <div class="trip-image" style="background-image: url('../assets/destinations/Ooty/ooty.jpg');">
@@ -157,8 +164,8 @@
         <!-- Filter Buttons - now on the right -->
         <div class="filter-buttons">
             <button class="filter-button active" data-filter="all">All</button>
-            <button class="filter-button inactive" data-filter="solo">Solo Tours</button>
-            <button class="filter-button inactive" data-filter="group">Group Tours</button>
+            <button class="filter-button inactive" data-filter="domestic">Domestic</button>
+            <button class="filter-button inactive" data-filter="day">Day Trips</button>
             <button class="filter-button inactive" data-filter="upcoming">Upcoming</button>
         </div>
     </div>
@@ -166,7 +173,7 @@
     <!-- Tour Cards Grid -->
 <div class="tour-cards-grid">
     <!-- Andaman Islands -->
-    <div class="tour-card" data-category="solo group">
+    <div class="tour-card" data-category="all domestic">
         <div class="card-image" style="background-image: url('../assets/destinations/Andaman/andaman.jpg');"></div>
         <div class="card-content">
             <div class="card-header">
@@ -184,7 +191,7 @@
     </div>
 
     <!-- Aurangabad -->
-    <div class="tour-card" data-category="group">
+    <div class="tour-card" data-category="all domestic">
         <div class="card-image" style="background-image: url('../assets/destinations/Aurangabad/Aurangabad.jpg');"></div>
         <div class="card-content">
             <div class="card-header">
@@ -202,7 +209,7 @@
     </div>
 
     <!-- Dudhsagar -->
-    <div class="tour-card" data-category="solo group">
+    <div class="tour-card" data-category="all day">
         <div class="card-image" style="background-image: url('../assets/destinations/Dudhsagar/Dudhsagar.jpg');"></div>
         <div class="card-content">
             <div class="card-header">
@@ -220,7 +227,7 @@
     </div>
 
     <!-- Hampi -->
-    <div class="tour-card" data-category="solo group">
+    <div class="tour-card" data-category="all domestic">
         <div class="card-image" style="background-image: url('../assets/destinations/Hampi/Hampi.jpg');"></div>
         <div class="card-content">
             <div class="card-header">
@@ -237,8 +244,48 @@
         </div>
     </div>
 
+    <!-- Coimbatore - Ooty - Coonoor Trip -->
+    <div class="tour-card" data-category="all domestic upcoming">
+        <div class="card-image" style="background-image: url('../assets/destinations/Ooty/ooty.jpg');"></div>
+        <div class="card-content">
+            <div class="card-header">
+                <h3 class="card-title">COIMBATORE – OOTY – COONOOR</h3>
+                <span class="card-rating">
+                    <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.562-.955L10 0l2.95 5.955 6.562.955-4.756 4.635 1.122 6.545z"/></svg>
+                    4.8
+                </span>
+            </div>
+            <p class="card-description">
+                Experience the beautiful hill stations of Ooty and Coonoor in this scenic getaway.
+            </p>
+            <div class="card-meta">
+                <span class="trip-price">₹14,999</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kerala Independence Day Trip -->
+    <div class="tour-card" data-category="all domestic upcoming">
+        <div class="card-image" style="background-image: url('../assets/destinations/Kerala/Kerala.jpg');"></div>
+        <div class="card-content">
+            <div class="card-header">
+                <h3 class="card-title">KERALA INDEPENDENCE DAY ESCAPE</h3>
+                <span class="card-rating">
+                    <svg fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.545L.488 6.91l6.562-.955L10 0l2.95 5.955 6.562.955-4.756 4.635 1.122 6.545z"/></svg>
+                    4.9
+                </span>
+            </div>
+            <p class="card-description">
+                Kolukkumalai – Munnar – Alleppey – Jatayu – Azhimala – Padmanabhaswamy
+            </p>
+            <div class="card-meta">
+                <span class="trip-price">₹29,999</span>
+            </div>
+        </div>
+    </div>
+
     <!-- Leh -->
-    <div class="tour-card" data-category="solo group">
+    <div class="tour-card" data-category="all domestic">
         <div class="card-image" style="background-image: url('../assets/destinations/Ladakh/Leh.jpg');"></div>
         <div class="card-content">
             <div class="card-header">
@@ -256,7 +303,7 @@
     </div>
 
     <!-- Netravali -->
-    <div class="tour-card" data-category="solo group">
+    <div class="tour-card" data-category="all day">
         <div class="card-image" style="background-image: url('../assets/destinations/Netravali/netravali.jpg');"></div>
         <div class="card-content">
             <div class="card-header">
@@ -274,7 +321,7 @@
     </div>
 
     <!-- Sikkim -->
-    <div class="tour-card" data-category="group">
+    <div class="tour-card" data-category="all domestic">
         <div class="card-image" style="background-image: url('../assets/destinations/Sikkim/Sikkim.webp');"></div>
         <div class="card-content">
             <div class="card-header">
@@ -292,7 +339,7 @@
     </div>
 
     <!-- South Goa -->
-    <div class="tour-card" data-category="solo group">
+    <div class="tour-card" data-category="all day">
         <div class="card-image" style="background-image: url('../assets/destinations/South-Goa/Goa.jpg');"></div>
         <div class="card-content">
             <div class="card-header">
