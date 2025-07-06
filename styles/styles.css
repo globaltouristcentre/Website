@@ -310,12 +310,13 @@ body {
     display: flex;
     align-items: center;
     font-size: 0.875rem;
+    color: #333;
 }
 
 .card-rating svg {
     width: 1rem;
     height: 1rem;
-    color: black;
+    color: #f8d56b;
     margin-right: 0.25rem;
 }
 
@@ -1325,7 +1326,7 @@ body {
 /* MISSION SECTION */
 /* ============================================= */
 .mission-section {
-    background: #f0fdf4;
+    
     padding: 4rem 0;
     margin-top: 4rem;
 }
@@ -1916,3 +1917,29 @@ body {
     grid-template-columns: 1fr;
     gap: 1rem;
 }
+
+/* Add to styles.css */
+.trip-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    color: #4b5563;
+    font-size: 0.875rem;
+}
+
+.trip-duration-price {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.trip-duration {
+    color: #4b5563;
+}
+
+.trip-price {
+    font-weight: 700;
+    color: #000000;
+    font-size: 1.125rem;
+}
+

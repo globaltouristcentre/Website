@@ -1014,7 +1014,7 @@
     }
 
     .hero-section {
-        height: auto;
+        
         min-height: 350px; /* Increased minimum height */
         padding: 40px 0; /* Increased vertical padding */
         display: flex;
@@ -1100,5 +1100,33 @@
 
     .nav-links a.active {
         color: #f8d56b;
+    }
+}
+
+/* Add to responsive.css */
+@media (max-width: 768px) {
+    .trip-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .trip-duration-price {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .trip-price {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .trip-duration-price {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    
+    .trip-price {
+        font-size: 1.125rem;
     }
 }
