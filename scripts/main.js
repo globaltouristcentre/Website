@@ -84,15 +84,12 @@ if (tripForm) {
         const numDays = document.getElementById('numDays').value;
         const numPeople = document.getElementById('numPeople').value;
         const numRooms = document.getElementById('numRooms').value;
-        const roomCategory = document.getElementById('roomCategory').value;
-        const mealPlan = document.getElementById('mealPlan').value;
         const budget = document.getElementById('budget').value;
         const requirements = document.getElementById('requirements').value;
         
         const formattedDate = tripDate ? new Date(tripDate).toLocaleDateString('en-IN') : 'Not specified';
         
-        const message = `New Trip Inquiry:%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A%0A*Trip Details:*%0A*Starting Point:* ${startingPoint}%0A*Destination:* ${destination}%0A*Start Date:* ${formattedDate}%0A*Duration:* ${numDays} days%0A*Travelers:* ${numPeople} people%0A*Rooms:* ${numRooms || 'Not specified'} (${roomCategory || 'Any'})%0A*Meal Plan:* ${mealPlan || 'Not specified'}%0A*Budget:* ₹${budget || 'Flexible'} per person%0A%0A*Special Requirements:*%0A${requirements || 'None'}`;
-        
+        const message = `New Trip Inquiry:%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A%0A*Trip Details:*%0A*Starting Point:* ${startingPoint}%0A*Destination:* ${destination}%0A*Start Date:* ${formattedDate}%0A*Duration:* ${numDays} days%0A*Travelers:* ${numPeople} people%0A*Rooms:* ${numRooms || 'Not specified'}%0A*Budget:* ₹${budget || 'Flexible'} per person%0A%0A*Special Requirements:*%0A${requirements || 'None'}`;
         window.open(`https://wa.me/919067972295?text=${message}`, '_blank');
         tripForm.reset();
     });
@@ -404,6 +401,21 @@ if (tripForm) {
             });
         }
     });
+
+// Tab functionality for itinerary
+        document.querySelectorAll('.tab-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const tabId = button.getAttribute('data-tab');
+                
+                // Remove active class from all buttons and tabs
+                document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+                document.querySelectorAll('.itinerary-tab').forEach(tab => tab.classList.remove('active-tab'));
+                
+                // Add active class to clicked button and corresponding tab
+                button.classList.add('active');
+                document.getElementById(tabId).classList.add('active-tab');
+            });
+        });
 
 // Remove .html extension from the URL
 if (window.location.pathname.endsWith('.html')) {
